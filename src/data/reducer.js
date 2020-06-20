@@ -1,4 +1,5 @@
 import initialState from './initial';
+import { generateTeams } from './randomiser';
 
 const changeNoOfPlayers = (state, { value }) => {
     return {
@@ -10,7 +11,7 @@ const changeNoOfPlayers = (state, { value }) => {
 const addPlayer = (state, { data }) => {
     return {
         ...state,
-        players: [...state.players, {name: data.playerName, skill: data.playerSkill}]
+        players: [...state.players, { name: data.playerName, skill: data.playerSkill }]
     };
 };
 
@@ -24,10 +25,29 @@ const checkNoOfPlayers = state => {
 
 };
 
+const selectTeams = state => {
+
+    const players = state.players;
+
+    const teams = generateTeams(players, 2);
+
+    const team1 = teams[0];
+
+    const team2 = teams[1];
+
+    return {
+        ...state,
+        playersTeam1: team1,
+        playersTeam2: team2,
+    }
+
+}
+
 const reducer = (state, action) => {
     switch(action.type) {
         case "CHANGE_NO_OF_PLAYERS": return checkNoOfPlayers(changeNoOfPlayers(state, action));
         case "ADD_PLAYER": return checkNoOfPlayers(addPlayer(state, action));
+        case "GENERATE_TEAMS": return selectTeams(state, action);
         case "RESET": return initialState;
         default: return state;
     };

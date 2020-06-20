@@ -18,3 +18,9 @@ export const reset = () => {
     };
 };
 
+export const generateTeams = () => {
+    return {
+        type: "GENERATE_TEAMS",
+    };
+};
+

@@ -1,8 +1,10 @@
 //set initial state
 const initial = {
     numberOfPlayers: 5,
-    players: [],
     playerInputComplete: false,
+    players: [],
+    playersTeam1: [],
+    playersTeam2: [],
 };
 
 export default initial;

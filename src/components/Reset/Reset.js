@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Button = ({ handleClick }) => {
+const Reset = ({ handleClick }) => {
 
     return (
         <button onClick={ handleClick }>Reset</button>
@@ -8,4 +8,4 @@ const Button = ({ handleClick }) => {
 
 };
 
-export default Button;
+export default Reset;
