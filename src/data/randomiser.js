@@ -1,4 +1,4 @@
-let testArray = [1, 2, 3, 4, 5, 6, 7, 8];
+// let testArray = [1, 2, 3, 4, 5, 6, 7, 8];
 
 let shuffle = arr => {
 
@@ -51,6 +51,6 @@ let divide = (arr, n) => {
 
 };
 
-let generateTeams = (players, numberOfTeams) => {
+export const generateTeams = (players, numberOfTeams) => {
     return divide(shuffle(players), numberOfTeams);
 };

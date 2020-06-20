@@ -6,6 +6,7 @@ import PlayerList from './components/PlayerList/';
 import Reset from './components/Reset/';
 import TeamList1 from './components/TeamList/TeamList1';
 import TeamList2 from './components/TeamList/TeamList2';
+import GenerateTeams from './components/GenerateTeams/';
 
 const maxNoOfPlayers = 20;
 
@@ -14,6 +15,7 @@ function App() {
     <>
       <SelectNumber max={ maxNoOfPlayers } />
       <PlayerForm />
+      <GenerateTeams />
       <Reset />
       <PlayerList />
       <TeamList1 name="1"/>
