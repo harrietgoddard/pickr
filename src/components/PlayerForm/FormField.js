@@ -1,6 +1,12 @@
 import React from 'react';
 
-const FormField = ({ name, label, type, value }) => {
+const FormField = ({ 
+    name, 
+    label, 
+    type, 
+    value, 
+    handleChange, 
+}) => {
 
     return (
         <div>
@@ -10,6 +16,7 @@ const FormField = ({ name, label, type, value }) => {
                 name={ name }
                 type={ type }
                 value={ value }
+                onChange={ handleChange }
             />
         </div>
     );
