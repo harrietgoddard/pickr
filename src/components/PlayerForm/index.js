@@ -1,19 +1,13 @@
-import React from 'react';
-import FormField from './FormField';
+import { connect } from "react-redux";
+import PlayerForm from './PlayerForm';
+import { addPlayer } from '../../data/action';
 
-const PlayerForm = () => {
-
-    return (
-        <div>
-            <FormField
-                name={ "player-name" }
-                label={ "Enter player names" }
-                type={ "text" }
-                value={ "placeholder value" }
-            />
-        </div>
-    );
-
+const mapDispatchToProps = dispatch => {
+    return {
+        handleSubmit: data => { 
+            dispatch(addPlayer(data));
+        }
+    };
 };
 
-export default PlayerForm;
+export default connect(null, mapDispatchToProps)(PlayerForm);
