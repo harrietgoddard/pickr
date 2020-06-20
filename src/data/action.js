@@ -1,12 +1,7 @@
-export const increment = () => {
+export const changeNumber = value => {
     return {
-        type: "INCREMENT"
-    };
-};
-
-export const decrement = () => {
-    return {
-        type: "DECREMENT"
+        type: "CHANGE_NO_OF_PLAYERS",
+        value: value,
     };
 };
 

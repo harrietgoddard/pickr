@@ -1,6 +1,7 @@
 import React from 'react';
 
 const SelectNumber = ({ 
+    max,
     numberOfPlayers, 
     handleIncrement, 
     handleDecrement, 
@@ -9,8 +10,14 @@ const SelectNumber = ({
     return (
         <div>
             <p>Select: { numberOfPlayers }-a-side</p>
-            <button onClick={ handleIncrement }>+</button>
-            <button onClick={ handleDecrement }>-</button>
+            <button 
+                onClick={ handleIncrement }
+                disabled={ numberOfPlayers === max }
+            >+</button>
+            <button 
+                onClick={ handleDecrement }
+                disabled={ numberOfPlayers === 1 }
+            >-</button>
         </div>
     );
 
