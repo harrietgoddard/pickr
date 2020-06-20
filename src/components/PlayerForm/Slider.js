@@ -1,13 +1,10 @@
 import React from 'react';
 
-const FormField = ({ 
+const Slider = ({ 
     name, 
     label, 
     type, 
-    value,
-    min,
-    max,
-    step, 
+    value, 
     handleChange, 
 }) => {
 
@@ -19,9 +16,6 @@ const FormField = ({
                 name={ name }
                 type={ type }
                 value={ value }
-                min={ min }
-                max={ max }
-                step={ step }
                 onChange={ handleChange }
             />
         </div>
@@ -29,4 +23,4 @@ const FormField = ({
 
 };
 
-export default FormField;
+export default Slider;
