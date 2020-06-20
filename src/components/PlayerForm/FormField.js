@@ -23,6 +23,7 @@ const FormField = ({
                 max={ max }
                 step={ step }
                 onChange={ handleChange }
+                required
             />
         </div>
     );

@@ -2,6 +2,8 @@ import { connect } from "react-redux";
 import PlayerForm from './PlayerForm';
 import { addPlayer } from '../../data/action';
 
+const mapStateToProps = ({ playerInputComplete }) => ({ playerInputComplete });
+
 const mapDispatchToProps = dispatch => {
     return {
         handleSubmit: data => { 
@@ -10,4 +12,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(null, mapDispatchToProps)(PlayerForm);
+export default connect(mapStateToProps, mapDispatchToProps)(PlayerForm);

@@ -12,10 +12,20 @@ const addPlayer = (state, { data }) => {
     };
 };
 
+const checkNoOfPlayers = state => {
+    
+    const currentNoOfPlayers = state.players.length;
+    
+    const enoughPlayers = currentNoOfPlayers === state.numberOfPlayers * 2;
+
+    return { ...state, playerInputComplete: enoughPlayers };
+
+};
+
 const reducer = (state, action) => {
     switch(action.type) {
-        case "CHANGE_NO_OF_PLAYERS": return changeNoOfPlayers(state, action);
-        case "ADD_PLAYER": return addPlayer(state, action);
+        case "CHANGE_NO_OF_PLAYERS": return checkNoOfPlayers(changeNoOfPlayers(state, action));
+        case "ADD_PLAYER": return checkNoOfPlayers(addPlayer(state, action));
         default: return state;
     };
 };

@@ -44,6 +44,8 @@ class PlayerForm extends Component {
 
         const { playerName, playerSkill } = this.state;
 
+        const { playerInputComplete } = this.props;
+
         return (
             <form onSubmit={ this.handleSubmit }>
                 <FormField
@@ -63,9 +65,11 @@ class PlayerForm extends Component {
                     value={ playerSkill }
                     handleChange={ this.handleSkill }
                 />
-                <Button
-                    label={ "Add player" }
-                />
+                { playerInputComplete ? null :
+                    <Button
+                        label={ "Add player" }
+                    />
+                }
             </form>
         );
     };
