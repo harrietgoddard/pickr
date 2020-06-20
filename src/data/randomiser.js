@@ -1,4 +1,4 @@
-let testArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let testArray = [1, 2, 3, 4, 5, 6, 7, 8];
 
 let shuffle = arr => {
 
@@ -26,4 +26,31 @@ let shuffle = arr => {
 
     return arr;
 
+};
+
+let isDivisible = (arr, n) => arr.length % n === 0;
+
+//takes an array and divides it into n equal arrays (returns an array of arrays)
+let divide = (arr, n) => {
+    
+    if (!isDivisible(arr, n)) {
+        return "Can't generate equal teams";
+    }
+    
+    let container = [];
+    
+    let interval = arr.length / n;
+    
+    for (let i = 0; i < arr.length; i += interval) {
+        if (i % interval === 0) {
+            container.push(arr.slice(i, i + interval));
+        } 
+    }
+
+    return container;
+
+};
+
+let generateTeams = (players, numberOfTeams) => {
+    return divide(shuffle(players), numberOfTeams);
 };
