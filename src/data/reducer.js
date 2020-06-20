@@ -1,3 +1,5 @@
+import initialState from './initial';
+
 const changeNoOfPlayers = (state, { value }) => {
     return {
         ...state,
@@ -26,6 +28,7 @@ const reducer = (state, action) => {
     switch(action.type) {
         case "CHANGE_NO_OF_PLAYERS": return checkNoOfPlayers(changeNoOfPlayers(state, action));
         case "ADD_PLAYER": return checkNoOfPlayers(addPlayer(state, action));
+        case "RESET": return initialState;
         default: return state;
     };
 };

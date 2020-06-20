@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import FormField from './FormField';
-import Button from './Button';
 
 class PlayerForm extends Component {
 
@@ -66,9 +65,7 @@ class PlayerForm extends Component {
                     handleChange={ this.handleSkill }
                 />
                 { playerInputComplete ? null :
-                    <Button
-                        label={ "Add player" }
-                    />
+                    <button>Add player</button>
                 }
             </form>
         );
