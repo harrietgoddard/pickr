@@ -10,7 +10,7 @@ const changeNoOfPlayers = (state, { value }) => {
 const addPlayer = (state, { data }) => {
     return {
         ...state,
-        players: [...state.players, {name: data.playerName, skill: data.playerSkill}]
+        players: [...state.players, { name: data.playerName, skill: data.playerSkill }]
     };
 };
 
