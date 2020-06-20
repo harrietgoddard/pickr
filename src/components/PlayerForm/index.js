@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FormField from './FormField';
+import Button from './Button';
 
 class PlayerForm extends Component {
 
@@ -13,6 +14,7 @@ class PlayerForm extends Component {
 
         this.handleName = this.handleName.bind(this);
         this.handleSkill = this.handleSkill.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     };
 
     handleName = e => {
@@ -27,12 +29,18 @@ class PlayerForm extends Component {
         });
     };
 
+    handleSubmit = (e) => {
+        e.preventDefault();
+        
+        this.props.handleSubmit({ ...this.state });
+    };
+
     render() {
 
         const { playerName } = this.state;
 
         return (
-            <div>
+            <form onSubmit={ this.handleSubmit }>
                 <FormField
                     name={ "player-name" }
                     label={ "Enter player name" }
@@ -49,7 +57,10 @@ class PlayerForm extends Component {
                     step={ "1" }
                     handleChange={ this.handleSkill }
                 />
-            </div>
+                <Button
+                    label={ "Add player" }
+                />
+            </form>
         );
     };
 };
