@@ -1,3 +1,4 @@
+//set initial state
 const initial = {
     numberOfPlayers = 5,
 };
