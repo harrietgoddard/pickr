@@ -1,5 +1,6 @@
 import initialState from './initial';
 import { randomTeams, balancedTeams } from './teamPicker';
+import { calculateFavourite, calculateScores } from './predictor';
 
 const changeNoOfPlayers = (state, { value }) => {
     return {
@@ -59,6 +60,32 @@ const toggleHome = state => {
     };
 };
 
+const getPredictions = state => {
+    
+    const { playersTeam1, playersTeam2, home } = state;
+
+    let scores = calculateScores(playersTeam1, playersTeam2, home);
+
+    let favourite = calculateFavourite(scores);
+
+    let favouriteHome = favourite === home;
+
+    let favouriteSkills = favourite === 1 ? scores.team1Total : scores.team2Total;
+
+    let unfavouriteSkills = favourite === 1 ? scores.team2Total : scores.team1Total;
+
+    return {
+        ...state,
+        predictions: {
+            ...state.predictions,
+            favourite,
+            favouriteHome,
+            favouriteSkills,
+            unfavouriteSkills,
+        }
+    }
+}
+
 const reducer = (state, action) => {
     switch(action.type) {
         case "CHANGE_NO_OF_PLAYERS": return checkNoOfPlayers(changeNoOfPlayers(state, action));
@@ -66,6 +93,7 @@ const reducer = (state, action) => {
         case "TOGGLE_BALANCED": return toggleBalanced(state);
         case "GENERATE_TEAMS": return generateTeams(state);
         case "TOGGLE_HOME": return toggleHome(state);
+        case "GET_PREDICTIONS": return getPredictions(state);
         case "RESET": return initialState;
         default: return state;
     };

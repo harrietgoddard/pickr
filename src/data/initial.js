@@ -7,6 +7,7 @@ const initial = {
     playersTeam1: [],
     playersTeam2: [],
     home: 1,
+    predictions: {},
 };
 
 export default initial;
