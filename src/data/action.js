@@ -49,3 +49,9 @@ export const getPredictions = () => {
     };
 };
 
+export const showTeams = () => {
+    return {
+        type: "SHOW_TEAMS",
+    };
+};
+

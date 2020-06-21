@@ -91,6 +91,7 @@ const generateTeams = state => {
         ...state,
         playersTeam1: team1,
         playersTeam2: team2,
+        teamsComplete: true,
     };
 
 };
@@ -161,8 +162,15 @@ const getPredictions = state => {
             favouriteSkills,
             unfavouriteSkills,
         }
-    }
-}
+    };
+};
+
+const showTeams = state => {
+    return {
+        ...state,
+        gameStarted: true,
+    };
+};
 
 const reducer = (state, action) => {
     switch(action.type) {
@@ -173,6 +181,7 @@ const reducer = (state, action) => {
         case "GENERATE_TEAMS": return generateTeams(state);
         case "TOGGLE_HOME": return toggleHome(state);
         case "GET_PREDICTIONS": return getPredictions(state);
+        case "SHOW_TEAMS": return showTeams(state);
         case "RESET": return initialState;
         default: return state;
     };
