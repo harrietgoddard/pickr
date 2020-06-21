@@ -11,6 +11,7 @@ import HomeButton1 from './components/HomeButton/HomeButton1';
 import HomeButton2 from './components/HomeButton/HomeButton2';
 import Predictions from './components/Predictions/';
 import { maxNoOfPlayers, homeAdvantage } from './data/settings';
+import Prompt from './components/Prompt/';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <SelectNumber max={ maxNoOfPlayers } />
       <PlayerForm />
       <GenerateTeams />
+      <Prompt />
       <Reset />
       <PlayerList />
       <TeamList1 name="1"/>

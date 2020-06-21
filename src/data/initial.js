@@ -7,6 +7,7 @@ const initial = {
 
     playerInputComplete: false,
     teamsComplete: false,
+    gameStarted: false,
 
     balanced: false,
 
