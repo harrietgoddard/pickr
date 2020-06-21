@@ -1,6 +1,7 @@
 
 /*
-* takes an array and returns another array with the same values in a random * order
+* takes an array and returns another array with the same values in a random 
+* order
 */
 
 let shuffle = arr => {
@@ -52,7 +53,8 @@ let isDivisible = (arr, n) => arr.length % n === 0;
 
 
 /*
-* takes an array and returns another array containing n arrays, whereby    * items are allocated based on their position in the original array 
+* takes an array and returns another array containing n arrays, whereby    
+* items are allocated based on their position in the original array 
 */
 
 let splitArrays = (arr, n) => {

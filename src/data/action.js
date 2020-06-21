@@ -36,3 +36,9 @@ export const toggleHome = () => {
     };
 };
 
+export const getPredictions = () => {
+    return {
+        type: "GET_PREDICTIONS",
+    };
+};
+
