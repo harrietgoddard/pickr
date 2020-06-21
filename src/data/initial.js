@@ -4,11 +4,16 @@ import { defaultNumberOfPlayers } from './settings';
 const initial = {
     numberOfPlayers: defaultNumberOfPlayers,
     tooManyPlayers: false,
+
     playerInputComplete: false,
+    teamsComplete: false,
+
     balanced: false,
+
     players: [],
     playersTeam1: [],
     playersTeam2: [],
+
     home: 1,
     predictions: {},
 };
