@@ -28,6 +28,8 @@ function App() {
       </header> 
       <div className="team-list-1">
         <TeamList1 />
+      </div>
+      <div className="home-btn-container-1">
         <HomeButton1 />
       </div>
 
@@ -36,6 +38,8 @@ function App() {
       </header>
       <div className="team-list-2">
         <TeamList2 />
+      </div>
+      <div className="home-btn-container-2">
         <HomeButton2 />
       </div>
 
