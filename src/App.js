@@ -8,18 +8,20 @@ import HomeButton2 from './components/HomeButton/HomeButton2';
 import Predictions from './components/Predictions/';
 import { homeAdvantage } from './data/settings';
 import ControlPanel from './components/ControlPanel/';
+import Header from './components/Header/';
 
 
 function App() {
   return (
     <div className="container">
-      <ControlPanel />
+      <Header />
+      {/* <ControlPanel />
       <PlayerList />
       <TeamList1 name="1"/>
       <HomeButton1 />
       <TeamList2 name="2"/>
       <HomeButton2 />
-      <Predictions homeAdvantage={ homeAdvantage }/>
+      <Predictions homeAdvantage={ homeAdvantage }/> */}
     </div>
   );
 }

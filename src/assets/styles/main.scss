@@ -1,16 +1,19 @@
-// @import '_reset.scss';
-// @import '_settings.scss';
+@import '_reset.scss';
+@import '_settings.scss';
+@import '_typography.scss';
+@import '_header.scss';
 
-// .container {
-//     background-image: url(../images/football-team.jpg);
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-color: teal;
-//     background-blend-mode: multiply;
-//     color: white;
-//     height: 100vh;
-//     display: grid;
-//     grid-template-rows: repeat(3, 1fr);
-//     grid-template-columns: repeat(3, 1fr);
-//     grid-gap: var(--gutter);
-// }
+.container {
+    background-image: url(../images/football-team.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: teal;
+    background-blend-mode: multiply;
+    color: white;
+    height: 100vh;
+    padding: var(--gutter);
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: var(--gutter);
+}
