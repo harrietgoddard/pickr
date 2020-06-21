@@ -2,6 +2,8 @@ import { connect } from "react-redux";
 import Predictions from './Predictions';
 import { getPredictions } from '../../data/action';
 
+const mapStateToProps = ({ predictions }) => ({ predictions });
+
 const mapDispatchToProps = dispatch => {
     return {
         handleClick: () => { 
@@ -10,4 +12,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(null, mapDispatchToProps)(Predictions);
+export default connect(mapStateToProps, mapDispatchToProps)(Predictions);

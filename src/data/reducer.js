@@ -115,6 +115,9 @@ const getPredictions = state => {
     //returns a number representing the favourite team
     let favourite = calculateFavourite(scores);
 
+    //the 'unfavourite' team
+    let unfavourite = favourite === 1 ? 2 : 1;
+
     //did the favourite benefit from a home advantage
     let favouriteHome = favourite === home;
 
@@ -129,6 +132,7 @@ const getPredictions = state => {
         predictions: {
             ...state.predictions,
             favourite,
+            unfavourite,
             favouriteHome,
             favouriteSkills,
             unfavouriteSkills,
