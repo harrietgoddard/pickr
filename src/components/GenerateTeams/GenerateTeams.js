@@ -1,9 +1,20 @@
 import React from 'react';
+import FormField from './FormField';
 
-const GenerateTeams = ({ handleClick }) => {
+const GenerateTeams = ({ playerInputComplete, balanced, handleClick, handleToggle }) => {
 
     return (
-        <button onClick={ handleClick }>Generate teams</button>
+        !playerInputComplete ? null :
+        <div>
+            <FormField 
+                name={ "team-picker-type" }
+                label={ "Balance teams by skill (default random)" }
+                type={ "checkbox" }
+                value={ balanced }
+                handleToggle={ handleToggle }
+            />
+            <button onClick={ handleClick }>Generate teams</button>
+        </div>
     );
 
 };

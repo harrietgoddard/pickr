@@ -24,3 +24,9 @@ export const generateTeams = () => {
     };
 };
 
+export const toggleBalanced = () => {
+    return {
+        type: "TOGGLE_BALANCED",
+    };
+};
+

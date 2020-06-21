@@ -1,11 +1,14 @@
 import React from 'react';
 
-const Slider = ({ 
+const FormField = ({ 
     name, 
     label, 
     type, 
-    value, 
-    handleChange, 
+    value,
+    min,
+    max,
+    step, 
+    handleToggle, 
 }) => {
 
     return (
@@ -16,11 +19,16 @@ const Slider = ({
                 name={ name }
                 type={ type }
                 value={ value }
-                onChange={ handleChange }
+                min={ min }
+                max={ max }
+                step={ step }
+                checked={ value }
+                onChange={ handleToggle }
+                required
             />
         </div>
     );
 
 };
 
-export default Slider;
+export default FormField;
