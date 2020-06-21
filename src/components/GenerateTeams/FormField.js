@@ -22,7 +22,8 @@ const FormField = ({
                 min={ min }
                 max={ max }
                 step={ step }
-                onClick={ handleToggle }
+                checked={ value }
+                onChange={ handleToggle }
                 required
             />
         </div>
