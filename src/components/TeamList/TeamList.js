@@ -1,11 +1,9 @@
 import React from 'react';
 
-const TeamList = ({ playersTeam, name }) => {
+const TeamList = ({ playersTeam }) => {
 
     return (
             <ul>
-                {/* remove this */}
-                <h3>team {name}</h3>
                 { playersTeam.map((player, index) => {
                     return (
                         <li style={{display:"flex"}} key={ index }>

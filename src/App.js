@@ -13,20 +13,36 @@ import Header from './components/Header/';
 
 function App() {
   return (
+
     <div className="container">
+
       <Header />
+
       <ControlPanel />
+
       <PlayerList />
+
+      <header className="header-team-1">
+        {/* make this a variable: */}
+        <h2 className="team-title">Team 1</h2>
+      </header> 
       <div className="team-list-1">
-        <TeamList1 name="1"/>
+        <TeamList1 />
         <HomeButton1 />
       </div>
+
+      <header className="header-team-2">
+        <h2 className="team-title">Team 2</h2>
+      </header>
       <div className="team-list-2">
-        <TeamList2 name="2"/>
+        <TeamList2 />
         <HomeButton2 />
       </div>
+
       {/* <Predictions homeAdvantage={ homeAdvantage }/> */}
+
     </div>
+
   );
 }
 
