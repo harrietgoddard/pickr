@@ -7,7 +7,8 @@ const FormField = ({
     value,
     min,
     max,
-    step, 
+    step,
+    disable,
     handleChange, 
 }) => {
 
@@ -24,6 +25,7 @@ const FormField = ({
                 step={ step }
                 onChange={ handleChange }
                 required
+                disabled={ disable }
             />
         </div>
     );
