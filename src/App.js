@@ -10,8 +10,8 @@ import GenerateTeams from './components/GenerateTeams/';
 import HomeButton1 from './components/HomeButton/HomeButton1';
 import HomeButton2 from './components/HomeButton/HomeButton2';
 import Predictions from './components/Predictions/';
+import { maxNoOfPlayers, homeAdvantage } from './data/settings';
 
-const maxNoOfPlayers = 20;
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
       <HomeButton1 />
       <TeamList2 name="2"/>
       <HomeButton2 />
-      <Predictions />
+      <Predictions homeAdvantage={ homeAdvantage }/>
     </>
   );
 }

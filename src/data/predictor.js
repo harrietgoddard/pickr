@@ -1,3 +1,5 @@
+import { homeAdvantage } from './settings';
+
 /*
 * takes a team (an array of player objects) and returns the total
 * skills value
@@ -14,7 +16,7 @@ export const totalTeamSkills = team => {
 */
 
 export const addHomeAdvantage = totalSkills => {
-    let advantage = totalSkills * 0.15; //update with variable
+    let advantage = totalSkills * homeAdvantage; //update with variable
     return totalSkills + advantage; 
 };
 
