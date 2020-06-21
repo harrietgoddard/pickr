@@ -43,7 +43,7 @@ class PlayerForm extends Component {
 
         const { playerName, playerSkill } = this.state;
 
-        const { playerInputComplete } = this.props;
+        const { playerInputComplete, tooManyPlayers } = this.props;
 
         return (
             <form onSubmit={ this.handleSubmit }>
@@ -67,7 +67,13 @@ class PlayerForm extends Component {
                     handleChange={ this.handleSkill }
                 />
                 { playerInputComplete ? null :
-                    <button>Add player</button>
+                    <button 
+                        type="submit"
+                        disabled={ tooManyPlayers }
+                    >Add player</button>
+                }
+                { !tooManyPlayers ? null :
+                    <p>Too many players - please delete</p>
                 }
             </form>
         );

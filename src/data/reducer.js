@@ -59,7 +59,14 @@ const checkNoOfPlayers = state => {
     //check number of players added is twice that of the number of players per team
     const enoughPlayers = currentNoOfPlayers === state.numberOfPlayers * 2;
 
-    return { ...state, playerInputComplete: enoughPlayers };
+    //check if too many players have been added
+    const tooManyPlayers = currentNoOfPlayers > state.numberOfPlayers * 2;
+
+    return { 
+        ...state, 
+        playerInputComplete: enoughPlayers,
+        tooManyPlayers, 
+    };
 
 };
 
