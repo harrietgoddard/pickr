@@ -1,16 +1,23 @@
 export const changeNumber = value => {
     return {
         type: "CHANGE_NO_OF_PLAYERS",
-        value: value,
+        value,
     };
 };
 
 export const addPlayer = data => {
     return {
         type: "ADD_PLAYER",
-        data: data,
+        data,
     };
 };
+
+export const deletePlayer = index => {
+    return {
+        type: "DELETE_PLAYER",
+        index,
+    }
+}
 
 export const reset = () => {
     return {

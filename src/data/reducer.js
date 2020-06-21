@@ -31,6 +31,23 @@ const addPlayer = (state, { data }) => {
 
 
 /*
+* delete a player
+*/
+
+const deletePlayer = (state, action) => {
+    
+    let newPlayers = state.players.filter((player, index) => {
+        return index !== action.index;
+    });
+    
+    return {
+        ...state,
+        players: newPlayers,
+    };
+};
+
+
+/*
 * check whether enough players have been added given
 * the specified number of players per team
 */
@@ -144,6 +161,7 @@ const reducer = (state, action) => {
     switch(action.type) {
         case "CHANGE_NO_OF_PLAYERS": return checkNoOfPlayers(changeNoOfPlayers(state, action));
         case "ADD_PLAYER": return checkNoOfPlayers(addPlayer(state, action));
+        case "DELETE_PLAYER": return checkNoOfPlayers(deletePlayer(state, action));
         case "TOGGLE_BALANCED": return toggleBalanced(state);
         case "GENERATE_TEAMS": return generateTeams(state);
         case "TOGGLE_HOME": return toggleHome(state);
