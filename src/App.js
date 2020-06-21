@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import SelectNumber from './components/SelectNumber/';
 import PlayerForm from './components/PlayerForm/';
 import PlayerList from './components/PlayerList/';
