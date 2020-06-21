@@ -52,6 +52,7 @@ class PlayerForm extends Component {
                     label={ "Enter player name" }
                     type={ "text" }
                     value={ playerName }
+                    disable={ playerInputComplete }
                     handleChange={ this.handleName }
                 />
                 <FormField
@@ -62,6 +63,7 @@ class PlayerForm extends Component {
                     max={ "3" }
                     step={ "1" }
                     value={ playerSkill }
+                    disable={ playerInputComplete }
                     handleChange={ this.handleSkill }
                 />
                 { playerInputComplete ? null :
