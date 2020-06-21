@@ -2,7 +2,7 @@
 const initial = {
     numberOfPlayers: 5,
     playerInputComplete: false,
-    balanced: true,
+    balanced: false,
     players: [],
     playersTeam1: [],
     playersTeam2: [],

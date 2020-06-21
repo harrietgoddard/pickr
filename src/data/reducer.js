@@ -43,10 +43,18 @@ const generateTeams = state => {
 
 };
 
+const toggleBalanced = state => {
+    return {
+        ...state,
+        balanced: !state.balanced,
+    };
+};
+
 const reducer = (state, action) => {
     switch(action.type) {
         case "CHANGE_NO_OF_PLAYERS": return checkNoOfPlayers(changeNoOfPlayers(state, action));
         case "ADD_PLAYER": return checkNoOfPlayers(addPlayer(state, action));
+        case "TOGGLE_BALANCED": return toggleBalanced(state, action);
         case "GENERATE_TEAMS": return generateTeams(state, action);
         case "RESET": return initialState;
         default: return state;
