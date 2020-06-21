@@ -15,13 +15,17 @@ function App() {
   return (
     <div className="container">
       <Header />
-      {/* <ControlPanel />
+      <ControlPanel />
       <PlayerList />
-      <TeamList1 name="1"/>
-      <HomeButton1 />
-      <TeamList2 name="2"/>
-      <HomeButton2 />
-      <Predictions homeAdvantage={ homeAdvantage }/> */}
+      <div className="team-list-1">
+        <TeamList1 name="1"/>
+        <HomeButton1 />
+      </div>
+      <div className="team-list-2">
+        <TeamList2 name="2"/>
+        <HomeButton2 />
+      </div>
+      {/* <Predictions homeAdvantage={ homeAdvantage }/> */}
     </div>
   );
 }
