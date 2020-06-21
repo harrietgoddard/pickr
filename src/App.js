@@ -7,6 +7,8 @@ import Reset from './components/Reset/';
 import TeamList1 from './components/TeamList/TeamList1';
 import TeamList2 from './components/TeamList/TeamList2';
 import GenerateTeams from './components/GenerateTeams/';
+import HomeButton1 from './components/HomeButton/HomeButton1';
+import HomeButton2 from './components/HomeButton/HomeButton2';
 
 const maxNoOfPlayers = 20;
 
@@ -19,7 +21,9 @@ function App() {
       <Reset />
       <PlayerList />
       <TeamList1 name="1"/>
+      <HomeButton1 />
       <TeamList2 name="2"/>
+      <HomeButton2 />
     </>
   );
 }
