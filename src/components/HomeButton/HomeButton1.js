@@ -1,15 +1,15 @@
 import { connect } from "react-redux";
 import HomeButton from './HomeButton';
-// import { reset } from '../../data/action';
+import { toggleHome } from '../../data/action';
 
-const mapStateToProps = ({ home }) => ({ home });
+const mapStateToProps = ({ home }) => ({ homeOrAway: home === 1 });
 
-// const mapDispatchToProps = dispatch => {
-//     return {
-//         handleClick: () => { 
-//             dispatch(reset());
-//         }
-//     };
-// };
+const mapDispatchToProps = dispatch => {
+    return {
+        handleClick: () => { 
+            dispatch(toggleHome());
+        }
+    };
+};
 
-export default connect(mapStateToProps)(HomeButton);
+export default connect(mapStateToProps, mapDispatchToProps)(HomeButton);

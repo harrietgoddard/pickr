@@ -1,9 +1,9 @@
 import React from 'react';
 
-const HomeButton = ({ home, handleClick }) => {
+const HomeButton = ({ homeOrAway, handleClick }) => {
 
     return (
-        <button onClick={ handleClick }>{ home }</button>
+        <button onClick={ handleClick }>{ homeOrAway ? "Home" : "Away" }</button>
     );
 
 };

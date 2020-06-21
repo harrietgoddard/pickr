@@ -30,3 +30,9 @@ export const toggleBalanced = () => {
     };
 };
 
+export const toggleHome = () => {
+    return {
+        type: "TOGGLE_HOME",
+    };
+};
+
