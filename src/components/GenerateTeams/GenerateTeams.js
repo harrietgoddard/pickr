@@ -1,9 +1,12 @@
 import React from 'react';
 
-const GenerateTeams = ({ handleClick }) => {
+const GenerateTeams = ({ playerInputComplete, handleClick }) => {
 
     return (
-        <button onClick={ handleClick }>Generate teams</button>
+        !playerInputComplete ? null :
+        <div>
+            <button onClick={ handleClick }>Generate teams</button>
+        </div>
     );
 
 };

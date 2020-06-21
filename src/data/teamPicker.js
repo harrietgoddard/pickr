@@ -75,7 +75,7 @@ let splitArrays = (arr, n) => {
 * generates teams randomly
 */
 
-export const generateTeams = (players, numberOfTeams) => {
+export const randomTeams = (players, numberOfTeams) => {
     return splitArrays(shuffle(players), numberOfTeams);
 };
 
@@ -84,7 +84,7 @@ export const generateTeams = (players, numberOfTeams) => {
 * generates teams whereby skill level is balanced as far as possible
 */
 
-export const balanceTeams = (players, numberOfTeams) => {
+export const balancedTeams = (players, numberOfTeams) => {
     return splitArrays(orderBySkill(players), numberOfTeams);
 };
 
