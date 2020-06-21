@@ -1,3 +1,12 @@
 @import '_reset.scss';
 @import '_settings.scss';
 
+body {
+    background-image: url(../images/football-team.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: teal;
+    background-blend-mode: multiply;
+    //remove this:
+    color: white;
+}
