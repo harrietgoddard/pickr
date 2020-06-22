@@ -57,6 +57,7 @@ class PlayerForm extends Component {
                         value={ playerName }
                         disable={ playerInputComplete }
                         handleChange={ this.handleName }
+                        className={ "text-main text-input"}
                     />
                     <FormField
                         name={ "player-skill" }
@@ -68,6 +69,7 @@ class PlayerForm extends Component {
                         value={ playerSkill }
                         disable={ playerInputComplete }
                         handleChange={ this.handleSkill }
+                        className={ "slider" }
                     />
                     { playerInputComplete ? null :
                         <button 

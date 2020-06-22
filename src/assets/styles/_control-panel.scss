@@ -4,3 +4,16 @@
     border: 2px solid white;
     padding: 2rem;
 }
+
+.control-number {
+    display: flex;
+    align-items: center;
+
+    p {
+        margin-right: 0.8em;
+    }
+
+    button {
+        margin-right: 0.5em;
+    }
+}

@@ -9,6 +9,7 @@ const FormField = ({
     max,
     step,
     disable,
+    className,
     handleChange, 
 }) => {
 
@@ -29,7 +30,7 @@ const FormField = ({
                 onChange={ handleChange }
                 required
                 disabled={ disable }
-                className="text-main"
+                className={ className }
             />
         </div>
     );

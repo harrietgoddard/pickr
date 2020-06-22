@@ -9,13 +9,13 @@ import { maxNoOfPlayers } from '../../data/settings';
 const ControlPanel = () => {
 
     return (
-        <div className="control-panel">
+        <section className="control-panel">
             <SelectNumber max={ maxNoOfPlayers }/>
             <PlayerForm />
             <GenerateTeams />
             <Prompt />
             <Reset />
-        </div>
+        </section>
     );
 
 };

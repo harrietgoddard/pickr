@@ -10,7 +10,7 @@ const SelectNumber = ({
 
     return (
         teamsComplete ? null :
-        <div>
+        <div className="control-number">
             <p
             className="text-main"
             >Select mode: { numberOfPlayers }-a-side</p>
