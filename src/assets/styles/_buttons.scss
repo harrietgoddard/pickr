@@ -24,7 +24,7 @@
 .btn-reset {
     position: absolute;
     bottom: 10%;
-    right: 10%;
+    right: calc(1.2em + 1.5em);
 }
 
 .btn-large {
@@ -55,4 +55,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.btn-add, .btn-reset {
+    width: 180px;
 }
