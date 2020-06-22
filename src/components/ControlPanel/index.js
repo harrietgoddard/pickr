@@ -14,7 +14,7 @@ const ControlPanel = () => {
             <PlayerForm />
             <GenerateTeams />
             <Prompt />
-            <Reset />
+            {/* <Reset /> */}
         </section>
     );
 
