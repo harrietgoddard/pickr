@@ -11,15 +11,19 @@ const SelectNumber = ({
     return (
         teamsComplete ? null :
         <div>
-            <p>Select: { numberOfPlayers }-a-side</p>
+            <p
+            className="text-main"
+            >Select mode: { numberOfPlayers }-a-side</p>
             <button 
                 onClick={ handleIncrement }
                 disabled={ numberOfPlayers === max }
-            >+</button>
+                className="btn-arrow"
+            >&#x25B2;</button>
             <button 
                 onClick={ handleDecrement }
                 disabled={ numberOfPlayers === 1 }
-            >-</button>
+                className="btn-arrow"
+            >&#x25BC;</button>
         </div>
     );
 
