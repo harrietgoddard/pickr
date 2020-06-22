@@ -5,8 +5,9 @@
     padding: 0.3em;
 }
 
-.btn-arrow:hover {
+.btn-arrow:hover, .btn-small:hover {
     color: var(--terracotta);
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .btn-small {
@@ -20,10 +21,38 @@
     margin-top: 1em;
 }
 
-.btn-small:hover {
-    color: var(--terracotta);
+.btn-reset {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
 }
 
-.btn-add {
-    // align-self: center;
+.btn-large {
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    font-size: 1.5rem;
+    padding: 0.5em 1em;
+    letter-spacing: 0.3rem;
+    font-weight: 100;
+    margin-top: 0.5em;
+}
+
+.btn-active {
+    color: var(--terracotta);
+    border-color: var(--terracotta);
+}
+
+.btn-large:focus {
+    outline: none;
+}
+
+.btn-large:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
