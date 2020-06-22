@@ -18,7 +18,7 @@ const FormField = ({
         <div className={ containerClass }>
             <label 
             htmlFor={ name }
-            className="text-main form-label"
+            className="form-label"
             >{ label }</label>
             <input 
                 id={ name } 

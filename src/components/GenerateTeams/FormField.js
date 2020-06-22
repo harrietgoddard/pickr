@@ -12,8 +12,11 @@ const FormField = ({
 }) => {
 
     return (
-        <div>
-            <label htmlFor={ name }>{ label }</label>
+        <div className="team-picker-type">
+            <label 
+                htmlFor={ name }
+                className="form-label"
+            >{ label }</label>
             <input 
                 id={ name } 
                 name={ name }

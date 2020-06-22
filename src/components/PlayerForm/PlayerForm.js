@@ -47,7 +47,7 @@ class PlayerForm extends Component {
 
         return (
             
-            teamsComplete ? null :
+            playerInputComplete ? null :
             
                 <form 
                     onSubmit={ this.handleSubmit }
@@ -61,7 +61,7 @@ class PlayerForm extends Component {
                             value={ playerName }
                             disable={ playerInputComplete }
                             handleChange={ this.handleName }
-                            inputClass={ "text-main text-input"}
+                            inputClass={ "text-input"}
                             containerClass={ "form-field" }
                         />
                         <FormField
