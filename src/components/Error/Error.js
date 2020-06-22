@@ -8,7 +8,7 @@ const Error = ({ tooManyPlayers }) => {
             <p
                 className="form-label"
             >Delete players</p>
-            <p className="arrow bounce">&#8595;</p>
+            <p className="arrow bounce-down">&#8595;</p>
         </div>
     );
 

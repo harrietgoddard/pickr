@@ -68,13 +68,40 @@
     display: inline-block;
 }
 
-.bounce {
-    animation-name: bounce;
+.bounce-down {
+    animation-name: bounce-down;
     animation-timing-function: ease;
 }
 
-@keyframes bounce {
+@keyframes bounce-down {
     0%   { transform: translateY(0); }
     50%  { transform: translateY(0.5em); }
     100% { transform: translateY(0); }
+}
+
+.bounce-left {
+    animation-name: bounce-left;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce-left {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(-0.5em); }
+    100% { transform: translateX(0); }
+}
+
+.bounce-right {
+    animation-name: bounce-right;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce-right {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(0.5em); }
+    100% { transform: translateX(0); }
+}
+
+.customise {
+    display: flex;
+    align-items: center;
 }
