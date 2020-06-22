@@ -56,3 +56,25 @@
         height: 20px;
     }
 }
+
+//put in symbols file
+
+.arrow {
+    font-size: 2rem;
+    font-weight: 700;
+    color: red;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(0.5em); }
+    100% { transform: translateY(0); }
+}

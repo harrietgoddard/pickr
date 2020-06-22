@@ -4,9 +4,12 @@ const Error = ({ tooManyPlayers }) => {
 
     return (
         !tooManyPlayers ? null :
-        <p
-            className="control-message form-label"
-        >Delete players</p>
+        <div className="control-message">
+            <p
+                className="form-label"
+            >Delete players</p>
+            <p className="arrow bounce">&#8595;</p>
+        </div>
     );
 
 };
