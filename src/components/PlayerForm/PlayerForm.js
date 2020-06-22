@@ -47,7 +47,7 @@ class PlayerForm extends Component {
 
         return (
             
-            playerInputComplete ? null :
+            playerInputComplete || tooManyPlayers ? null :
             
                 <form 
                     onSubmit={ this.handleSubmit }
@@ -84,9 +84,9 @@ class PlayerForm extends Component {
                             className="btn-small btn-add"
                         >Add player</button>
                     }
-                    { !tooManyPlayers ? null :
+                    {/* { !tooManyPlayers ? null :
                         <p>Too many players - please delete</p>
-                    }
+                    } */}
                 </form>
         );
     };

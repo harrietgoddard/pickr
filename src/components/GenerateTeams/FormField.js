@@ -12,7 +12,7 @@ const FormField = ({
 }) => {
 
     return (
-        <div className="team-picker-type">
+        <div className="control-message">
             <label 
                 htmlFor={ name }
                 className="form-label"
