@@ -10,7 +10,7 @@ button {
 }
 
 .btn-arrow:hover, .btn-small:hover {
-    color: var(--terracotta);
+    color: var(--brick);
     background: rgba(0, 0, 0, 0.4);
 }
 
@@ -50,20 +50,19 @@ button {
 }
 
 .btn-active {
-    color: var(--terracotta);
-    border-color: var(--terracotta);
+    background-color: var(--brickAlpha);
 }
 
 .btn-large:focus {
     outline: none;
 }
 
-.btn-large:hover {
-    background: rgba(0, 0, 0, 0.4);
-}
-
 .home-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.btn-add, .btn-generate {
+    background-color: var(--brickAlpha);
 }
