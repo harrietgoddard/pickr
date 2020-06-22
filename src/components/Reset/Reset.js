@@ -3,7 +3,10 @@ import React from 'react';
 const Reset = ({ handleClick }) => {
 
     return (
-        <button onClick={ handleClick }>Reset</button>
+        <button 
+            onClick={ handleClick }
+            className="reset"
+        >Reset</button>
     );
 
 };

@@ -14,7 +14,10 @@ const FormField = ({
 
     return (
         <div>
-            <label htmlFor={ name }>{ label }</label>
+            <label 
+            htmlFor={ name }
+            className="text-main"
+            >{ label }</label>
             <input 
                 id={ name } 
                 name={ name }
@@ -26,6 +29,7 @@ const FormField = ({
                 onChange={ handleChange }
                 required
                 disabled={ disable }
+                className="text-main"
             />
         </div>
     );
