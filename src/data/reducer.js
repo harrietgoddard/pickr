@@ -92,6 +92,7 @@ const generateTeams = state => {
         playersTeam1: team1,
         playersTeam2: team2,
         teamsComplete: true,
+        players: [],
     };
 
 };

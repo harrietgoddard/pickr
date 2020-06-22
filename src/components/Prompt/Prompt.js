@@ -5,8 +5,19 @@ const Prompt = ({ teamsComplete, handleClick }) => {
     return (
         !teamsComplete ? null :
         <div>
-            <p>&#60; Customise teams &#62;</p>
-            <button onClick={ handleClick }>Kick off</button>
+            <p className="text-main customise">
+                <span className="arrow bounce-left">
+                    &#8592;
+                </span> 
+                Customise teams
+                <span className="arrow bounce-right">
+                    &#8594;
+                </span>
+            </p>
+            <button 
+                onClick={ handleClick }
+                className="btn-small btn-generate"
+            >Confirm teams</button>
         </div>
     );
 

@@ -1,6 +1,68 @@
+button {
+    cursor: pointer;
+}
+
 .btn-arrow {
     color: white;
     background: transparent;
     border: 2px solid white;
     padding: 0.3em;
+}
+
+.btn-arrow:hover, .btn-small:hover {
+    color: var(--brick);
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.btn-small {
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+    margin-top: 1em;
+    width: 230px;
+}
+
+.btn-reset {
+    position: absolute;
+    bottom: 1.5rem;
+    right: calc(1.2em + 1.5em);
+}
+
+.btn-generate {
+    position: absolute;
+    bottom: 1.5rem;
+    left: calc(1.2em + 1.5em); 
+}
+
+.btn-large {
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    font-size: 1.5rem;
+    padding: 0.5em 1em;
+    letter-spacing: 0.3rem;
+    font-weight: 100;
+    margin-top: 0.5em;
+}
+
+.btn-active {
+    background-color: var(--brickAlpha);
+}
+
+.btn-large:focus {
+    outline: none;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-add, .btn-generate {
+    background-color: var(--brickAlpha);
 }

@@ -9,14 +9,16 @@ const FormField = ({
     max,
     step,
     disable,
+    inputClass,
+    containerClass,
     handleChange, 
 }) => {
 
     return (
-        <div>
+        <div className={ containerClass }>
             <label 
             htmlFor={ name }
-            className="text-main"
+            className="form-label"
             >{ label }</label>
             <input 
                 id={ name } 
@@ -29,7 +31,7 @@ const FormField = ({
                 onChange={ handleChange }
                 required
                 disabled={ disable }
-                className="text-main"
+                className={ inputClass }
             />
         </div>
     );

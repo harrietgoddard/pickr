@@ -5,16 +5,19 @@ const GenerateTeams = ({ playerInputComplete, teamsComplete, balanced, handleCli
 
     return (
         !playerInputComplete || teamsComplete ? null :
-        <div>
+        <form>
             <FormField 
                 name={ "team-picker-type" }
-                label={ "Balance teams by skill (default random)" }
+                label={ "Balance teams by skill?" }
                 type={ "checkbox" }
                 value={ balanced }
                 handleToggle={ handleToggle }
             />
-            <button onClick={ handleClick }>Generate teams</button>
-        </div>
+            <button 
+                onClick={ handleClick }
+                className="btn-small btn-generate"
+            >Generate teams</button>
+        </form>
     );
 
 };
