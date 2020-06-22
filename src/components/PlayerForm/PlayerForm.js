@@ -43,7 +43,7 @@ class PlayerForm extends Component {
 
         const { playerName, playerSkill } = this.state;
 
-        const { playerInputComplete, tooManyPlayers, teamsComplete } = this.props;
+        const { playerInputComplete, tooManyPlayers } = this.props;
 
         return (
             
@@ -84,9 +84,6 @@ class PlayerForm extends Component {
                             className="btn-small btn-add"
                         >Add player</button>
                     }
-                    {/* { !tooManyPlayers ? null :
-                        <p>Too many players - please delete</p>
-                    } */}
                 </form>
         );
     };

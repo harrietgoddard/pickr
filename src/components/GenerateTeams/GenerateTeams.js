@@ -13,7 +13,8 @@ const GenerateTeams = ({ playerInputComplete, teamsComplete, balanced, handleCli
                 value={ balanced }
                 handleToggle={ handleToggle }
             />
-            <button 
+            <button
+                type="button" 
                 onClick={ handleClick }
                 className="btn-small btn-generate"
             >Generate teams</button>
