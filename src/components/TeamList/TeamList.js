@@ -1,5 +1,5 @@
 import React from 'react';
-import { CirclePicker } from 'react-color';
+import ColorPicker from '../ColorPicker/';
 
 const TeamList = ({ playersTeam, teamsComplete }) => {
 
@@ -18,16 +18,7 @@ const TeamList = ({ playersTeam, teamsComplete }) => {
                     )
                 })}
             </ul>
-            <div className="color-picker">
-                <p className="form-label">Pick team colour</p>
-                    <div className="color-picker-container">
-                        <CirclePicker
-                        colors={ ["#f44336", "#e91e63", "#9c27b0", "#2196f3", "#03a9f4", "#00bcd4", "#009688", "#4caf50", "#8bc34a", "#cddc39", "#ff9800", "#ff5722", "#795548", "#607d8b"] }
-                        circleSize={ 23 }
-                        circleSpacing={ 10 }
-                        />
-                    </div>
-            </div>
+            <ColorPicker />
         </div>
     );
 

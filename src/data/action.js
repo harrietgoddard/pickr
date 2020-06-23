@@ -55,3 +55,10 @@ export const showTeams = () => {
     };
 };
 
+export const setColor = data => {
+    return {
+        type: "SET_COLOR",
+        color: data,
+    };
+};
+

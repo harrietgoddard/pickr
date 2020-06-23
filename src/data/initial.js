@@ -15,6 +15,8 @@ const initial = {
     playersTeam1: [],
     playersTeam2: [],
 
+    color: "",
+
     home: 1,
     predictions: {},
 };
