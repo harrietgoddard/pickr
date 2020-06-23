@@ -18,7 +18,11 @@ class ColorPicker extends Component {
     };
 
     render() {
+        
         return (
+
+            !this.props.teamsComplete ? null :
+
             <div>
                 <p className="form-label">Pick team colour</p>
                 <CirclePicker

@@ -9,6 +9,8 @@ import Predictions from './components/Predictions/';
 import { homeAdvantage } from './data/settings';
 import ControlPanel from './components/ControlPanel/';
 import Header from './components/Header/';
+import ColorPicker1 from './components/ColorPicker/ColorPicker1';
+import ColorPicker2 from './components/ColorPicker/ColorPicker2';
 
 
 function App() {
@@ -28,6 +30,7 @@ function App() {
       </header> 
       <div className="team-list-1">
         <TeamList1 />
+        <ColorPicker1 />
       </div>
       <div className="home-btn-container-1">
         <HomeButton1 />
@@ -38,6 +41,7 @@ function App() {
       </header>
       <div className="team-list-2">
         <TeamList2 />
+        <ColorPicker2 />
       </div>
       <div className="home-btn-container-2">
         <HomeButton2 />

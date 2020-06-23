@@ -55,9 +55,18 @@ export const showTeams = () => {
     };
 };
 
-export const setColor = data => {
+export const setColor1 = data => {
     return {
         type: "SET_COLOR",
+        team: 1,
+        color: data,
+    };
+};
+
+export const setColor2 = data => {
+    return {
+        type: "SET_COLOR",
+        team: 2,
         color: data,
     };
 };
