@@ -69,6 +69,15 @@
     grid-column: 4 / 7;
     border: 2px solid white;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+        width: 100%;
+        max-height: 60%;
+    }
 }
 
 .team-list-2-final {
@@ -76,4 +85,13 @@
     grid-column: 7 / 10;
     border: 2px solid white;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+        width: 100%;
+        max-height: 60%;
+    }
 }

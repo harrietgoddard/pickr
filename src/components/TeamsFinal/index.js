@@ -1,20 +1,6 @@
-import React from 'react';
-import TeamList1 from '../TeamList/TeamList1';
-import TeamList2 from '../TeamList/TeamList2';
+import { connect } from "react-redux";
+import TeamsFinal from './TeamsFinal';
 
-const TeamsFinal = () => {
+const mapStateToProps = ({ color1, color2 }) => ({ color1, color2 });
 
-    return (
-        <>
-            <div className="team-list-1-final">
-                <TeamList1 />
-            </div>
-            <div className="team-list-2-final">
-                <TeamList2 />
-            </div>
-        </>
-    );
-
-};
-
-export default TeamsFinal;
+export default connect(mapStateToProps)(TeamsFinal);
