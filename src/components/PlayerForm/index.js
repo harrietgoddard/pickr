@@ -2,8 +2,6 @@ import { connect } from "react-redux";
 import PlayerForm from './PlayerForm';
 import { addPlayer } from '../../data/action';
 
-const mapStateToProps = ({ playerInputComplete, tooManyPlayers, teamsGenerated }) => ({ playerInputComplete, tooManyPlayers, teamsGenerated });
-
 const mapDispatchToProps = dispatch => {
     return {
         handleSubmit: data => { 
@@ -12,4 +10,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(PlayerForm);
+export default connect(null, mapDispatchToProps)(PlayerForm);

@@ -43,48 +43,39 @@ class PlayerForm extends Component {
 
         const { playerName, playerSkill } = this.state;
 
-        const { playerInputComplete, tooManyPlayers } = this.props;
-
         return (
             
-            playerInputComplete || tooManyPlayers ? null :
-            
-                <form 
-                    onSubmit={ this.handleSubmit }
-                    className="form-container"
-                >
-                    <div className="form-inputs">
-                        <FormField
-                            name={ "player-name" }
-                            label={ "Enter player name" }
-                            type={ "text" }
-                            value={ playerName }
-                            disable={ playerInputComplete }
-                            handleChange={ this.handleName }
-                            inputClass={ "text-input"}
-                            containerClass={ "form-field" }
-                        />
-                        <FormField
-                            name={ "player-skill" }
-                            label={ "Select skill level" }
-                            type={ "range" }
-                            min={ "1" }
-                            max={ "3" }
-                            step={ "1" }
-                            value={ playerSkill }
-                            disable={ playerInputComplete }
-                            handleChange={ this.handleSkill }
-                            containerClass={ "form-field" }
-                        />
-                    </div>
-                    { playerInputComplete ? null :
-                        <button 
-                            type="submit"
-                            disabled={ tooManyPlayers }
-                            className="btn-small btn-add"
-                        >Add player</button>
-                    }
-                </form>
+            <form 
+                onSubmit={ this.handleSubmit }
+                className="form-container"
+            >
+                <div className="form-inputs">
+                    <FormField
+                        name={ "player-name" }
+                        label={ "Enter player name" }
+                        type={ "text" }
+                        value={ playerName }
+                        handleChange={ this.handleName }
+                        inputClass={ "text-input"}
+                        containerClass={ "form-field" }
+                    />
+                    <FormField
+                        name={ "player-skill" }
+                        label={ "Select skill level" }
+                        type={ "range" }
+                        min={ "1" }
+                        max={ "3" }
+                        step={ "1" }
+                        value={ playerSkill }
+                        handleChange={ this.handleSkill }
+                        containerClass={ "form-field" }
+                    />
+                </div>
+                <button 
+                    type="submit"
+                    className="btn-small btn-add"
+                >Add player</button>
+            </form>
         );
     };
 };
