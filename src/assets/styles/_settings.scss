@@ -27,3 +27,7 @@
 body {
     font-family: var(--fontMain);
 }
+
+main, section {
+    display: contents;
+}
