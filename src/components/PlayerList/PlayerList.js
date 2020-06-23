@@ -1,25 +1,38 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const PlayerList = ({ players, handleClick }) => {
+class PlayerList extends Component  {
 
-    return (
-        <div className="player-list">
-            <ul>
-                { players.map((player,index) => {
-                    return (
-                        <li style={{display:"flex"}} key={ index }>
-                            <p>{ player.name }</p>
-                            <p>{ player.skill }</p>
-                            <button 
-                                style={{height:20}}
-                                onClick={ () => handleClick(index) }
-                            >x</button>
-                        </li>
-                    )
-                })}
-            </ul>
-        </div>
-    );
+    //to keep the player list scroll bar at the bottom of the container when adding players
+    componentDidUpdate() {
+        
+        const { playerList } = this.refs;
+        
+        playerList.scrollTop = playerList.scrollHeight - playerList.clientHeight;
+    }
+
+    render() {
+        
+        const { players, handleClick } = this.props;
+
+        return (
+            <div className="player-list-container">    
+                <ul ref="playerList" className="player-list">
+                    { players.map((player,index) => {
+                        return (
+                            <li className="player-card" key={ index }>
+                                <p className="text-card">{ player.name }</p>
+                                <p className="text-card">Skill - { player.skill }</p>
+                                <button
+                                    className="btn-delete"
+                                    onClick={ () => handleClick(index) }
+                                >x</button>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </div>
+        );
+    };
 
 };
 

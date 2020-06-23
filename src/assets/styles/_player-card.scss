@@ -1,0 +1,10 @@
+.player-card {
+    background-color: var(--brickAlpha);
+    border-radius: 3px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
