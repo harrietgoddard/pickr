@@ -21,7 +21,7 @@ class PlayerList extends Component  {
                         return (
                             <li className="player-card" key={ index }>
                                 <p className="text-card">{ player.name }</p>
-                                <p className="text-card">Skill { player.skill }</p>
+                                <p className="text-card">Skill - { player.skill }</p>
                                 <button
                                     className="btn-delete"
                                     onClick={ () => handleClick(index) }
