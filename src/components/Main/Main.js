@@ -4,6 +4,8 @@ import PlayerList from '../PlayerList/';
 import TeamStagingArea from '../TeamStagingArea/';
 import Predictions from '../Predictions/';
 import { maxNoOfPlayers, homeAdvantage } from '../../data/settings';
+import Reset from '../Reset/';
+import TeamsFinal from '../TeamsFinal';
 
 const Main = ({ teamsConfirmed }) => {
 
@@ -22,7 +24,12 @@ const Main = ({ teamsConfirmed }) => {
 
                 </> :
             
-                <Predictions homeAdvantage={ homeAdvantage }/>
+                <>
+                    {/* <Predictions homeAdvantage={ homeAdvantage }/> */}
+                    <TeamsFinal />
+                    
+                    <Reset />
+                </>
 
             }
             

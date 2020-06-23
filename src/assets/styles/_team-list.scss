@@ -63,3 +63,17 @@
     height: 100%;
     justify-content: space-between;
 }
+
+.team-list-1-final {
+    grid-row: 3 / 7;
+    grid-column: 4 / 7;
+    border: 2px solid white;
+    padding: 2rem;
+}
+
+.team-list-2-final {
+    grid-row: 3 / 7;
+    grid-column: 7 / 10;
+    border: 2px solid white;
+    padding: 2rem;
+}
