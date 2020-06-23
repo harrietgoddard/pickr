@@ -3,7 +3,7 @@ import './App.scss';
 import Header from './components/Header/';
 import ControlPanel from './components/ControlPanel/';
 import PlayerList from './components/PlayerList/';
-import TeamStagingArea from './components/TeamStagingArea';
+import TeamStagingArea from './components/TeamStagingArea/';
 import Predictions from './components/Predictions/';
 import { maxNoOfPlayers, homeAdvantage } from './data/settings';
 
