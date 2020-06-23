@@ -4,7 +4,7 @@
 * order
 */
 
-let shuffle = arr => {
+export const shuffle = arr => {
 
     //make a copy of the array
     let result = [...arr];
@@ -40,7 +40,7 @@ let shuffle = arr => {
 * orders a players array by skill level
 */
 
-let orderBySkill = arr => {
+export const orderBySkill = arr => {
     return arr.sort((a, b) => a.skill - b.skill);
 };
 
@@ -49,7 +49,7 @@ let orderBySkill = arr => {
 * checks an array can be divided into n equal parts
 */
 
-let isDivisible = (arr, n) => arr.length % n === 0;
+export const isDivisible = (arr, n) => arr.length % n === 0;
 
 
 /*
@@ -57,7 +57,7 @@ let isDivisible = (arr, n) => arr.length % n === 0;
 * items are allocated based on their position in the original array 
 */
 
-let splitArrays = (arr, n) => {
+export const splitArrays = (arr, n) => {
     
     if (!isDivisible(arr, n)) {
         return "Can't generate equal teams";
@@ -89,29 +89,6 @@ export const randomTeams = (players, numberOfTeams) => {
 export const balancedTeams = (players, numberOfTeams) => {
     return splitArrays(orderBySkill(players), numberOfTeams);
 };
-
-
-
-//takes an array and divides it into n equal arrays (returns an array of arrays)
-// let divide = (arr, n) => {
-    
-//     if (!isDivisible(arr, n)) {
-//         return "Can't generate equal teams";
-//     }
-    
-//     let container = [];
-    
-//     let interval = arr.length / n;
-    
-//     for (let i = 0; i < arr.length; i += interval) {
-//         if (i % interval === 0) {
-//             container.push(arr.slice(i, i + interval));
-//         } 
-//     }
-
-//     return container;
-
-// };
 
 
 
