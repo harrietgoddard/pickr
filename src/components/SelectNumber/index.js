@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import SelectNumber from './SelectNumber';
 import { changeNumber } from '../../data/action';
 
-const mapStateToProps = ({ numberOfPlayers, teamsComplete }) => ({ numberOfPlayers, teamsComplete });
+const mapStateToProps = ({ numberOfPlayers, teamsGenerated }) => ({ numberOfPlayers, teamsGenerated });
 
 const mapDispatchToProps = dispatch => {
     return {

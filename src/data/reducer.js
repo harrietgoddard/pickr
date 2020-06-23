@@ -91,7 +91,7 @@ const generateTeams = state => {
         ...state,
         playersTeam1: team1,
         playersTeam2: team2,
-        teamsComplete: true,
+        teamsGenerated: true,
         players: [],
     };
 
@@ -169,7 +169,7 @@ const getPredictions = state => {
 const showTeams = state => {
     return {
         ...state,
-        gameStarted: true,
+        teamsConfirmed: true,
     };
 };
 

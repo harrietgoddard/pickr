@@ -21,7 +21,7 @@ class ColorPicker extends Component {
         
         return (
 
-            !this.props.teamsComplete ? null :
+            !this.props.teamsGenerated ? null :
 
             <div>
                 <p className="form-label">Pick team colour</p>

@@ -6,8 +6,8 @@ const initial = {
     tooManyPlayers: false,
 
     playerInputComplete: false,
-    teamsComplete: false,
-    gameStarted: false,
+    teamsGenerated: false,
+    teamsConfirmed: false,
 
     balanced: false,
 

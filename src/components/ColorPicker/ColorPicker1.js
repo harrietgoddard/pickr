@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import ColorPicker from './ColorPicker';
 import { setColor1 } from '../../data/action';
 
-const mapStateToProps = ({ teamsComplete }) => ({ teamsComplete });
+const mapStateToProps = ({ teamsGenerated }) => ({ teamsGenerated });
 
 const mapDispatchToProps = dispatch => {
     return {

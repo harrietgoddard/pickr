@@ -1,10 +1,10 @@
 import React from 'react';
 
-const TeamList = ({ playersTeam, color, teamsComplete }) => {
+const TeamList = ({ playersTeam, color, teamsGenerated }) => {
 
     return (
 
-        !teamsComplete ? null :
+        !teamsGenerated ? null :
    
         <ul className="team-list">
             { playersTeam.map((player, index) => {

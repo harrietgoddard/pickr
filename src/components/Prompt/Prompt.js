@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Prompt = ({ teamsComplete, handleClick }) => {
+const Prompt = ({ teamsGenerated, handleClick }) => {
 
     return (
-        !teamsComplete ? null :
+        !teamsGenerated ? null :
         <div>
             <p className="text-main customise">
                 <span className="arrow bounce-left">

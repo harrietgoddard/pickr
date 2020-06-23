@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import GenerateTeams from './GenerateTeams';
 import { generateTeams, toggleBalanced } from '../../data/action';
 
-const mapStateToProps = ({ playerInputComplete, teamsComplete, balanced }) => ({ playerInputComplete, teamsComplete, balanced });
+const mapStateToProps = ({ playerInputComplete, teamsGenerated, balanced }) => ({ playerInputComplete, teamsGenerated, balanced });
 
 const mapDispatchToProps = dispatch => {
     return {
