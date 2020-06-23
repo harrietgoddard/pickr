@@ -15,7 +15,7 @@ const TeamList = ({ playersTeam, color, teamsComplete }) => {
                         style={{ background: color + "80"}}
                     >
                         <p className="text-card">{ player.name }</p>
-                        <p className="text-card">Skill - { player.skill }</p>
+                        <p className="text-card">skill - { player.skill }</p>
                     </li>
                 )
             })}
