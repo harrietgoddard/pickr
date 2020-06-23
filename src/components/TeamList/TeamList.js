@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TeamList = ({ playersTeam, teamsComplete }) => {
+const TeamList = ({ playersTeam, color, teamsComplete }) => {
 
     return (
 
@@ -9,7 +9,11 @@ const TeamList = ({ playersTeam, teamsComplete }) => {
         <ul className="team-list">
             { playersTeam.map((player, index) => {
                 return (
-                    <li className="player-card" key={ index }>
+                    <li 
+                        className="player-card" 
+                        key={ index }
+                        style={{ background: color + "80"}}
+                    >
                         <p className="text-card">{ player.name }</p>
                         <p className="text-card">Skill - { player.skill }</p>
                     </li>
