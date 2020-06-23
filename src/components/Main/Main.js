@@ -25,10 +25,12 @@ const Main = ({ teamsConfirmed }) => {
                 </> :
             
                 <>
-                    {/* <Predictions homeAdvantage={ homeAdvantage }/> */}
                     <TeamsFinal />
                     
-                    <Reset />
+                    <div className="predictions-container">
+                        <Predictions homeAdvantage={ homeAdvantage }/>
+                        <Reset />
+                    </div>
                 </>
 
             }
