@@ -43,3 +43,9 @@
     justify-content: center;
     align-items: center;
 }
+
+.team-list {
+    max-height: 70%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
