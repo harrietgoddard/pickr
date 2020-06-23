@@ -3,15 +3,15 @@ import React from 'react';
 const PlayerList = ({ players, handleClick }) => {
 
     return (
-        <div className="player-list">
-            <ul>
+        <div className="player-list-container">    
+            <ul id="playerList" className="player-list">
                 { players.map((player,index) => {
                     return (
-                        <li style={{display:"flex"}} key={ index }>
-                            <p>{ player.name }</p>
-                            <p>{ player.skill }</p>
-                            <button 
-                                style={{height:20}}
+                        <li className="player-card" key={ index }>
+                            <p className="text-card">{ player.name }</p>
+                            <p className="text-card">Skill { player.skill }</p>
+                            <button
+                                className="btn-delete"
                                 onClick={ () => handleClick(index) }
                             >x</button>
                         </li>

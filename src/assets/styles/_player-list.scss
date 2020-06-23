@@ -1,6 +1,17 @@
-.player-list {
+.player-list-container {
     grid-row: 5 / 7;
     grid-column: 4 / 10;
     border: 2px solid white;
     padding: 2rem;
+}
+
+.player-list {
+    // width: 50%;
+    max-height: 100%;
+    padding: 0 5rem;
+    margin: 0 auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    // display: flex;
+    // flex-direction: column-reverse;
 }

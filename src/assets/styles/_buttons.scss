@@ -9,7 +9,7 @@ button {
     padding: 0.3em;
 }
 
-.btn-arrow:hover, .btn-small:hover {
+.btn-arrow:hover, .btn-small:hover, .btn-delete:hover {
     color: var(--brick);
     background: rgba(0, 0, 0, 0.4);
 }
@@ -65,4 +65,14 @@ button {
 
 .btn-add, .btn-generate {
     background-color: var(--brickAlpha);
+}
+
+.btn-delete {
+    position: absolute;
+    right: -3rem;
+    top: 0.2rem;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.5rem;
 }
