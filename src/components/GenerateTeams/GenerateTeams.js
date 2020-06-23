@@ -1,10 +1,10 @@
 import React from 'react';
 import FormField from './FormField';
 
-const GenerateTeams = ({ playerInputComplete, teamsComplete, balanced, handleClick, handleToggle }) => {
+const GenerateTeams = ({ playerInputComplete, teamsGenerated, balanced, handleClick, handleToggle }) => {
 
     return (
-        !playerInputComplete || teamsComplete ? null :
+        !playerInputComplete || teamsGenerated ? null :
         <form>
             <FormField 
                 name={ "team-picker-type" }
