@@ -3,13 +3,11 @@ import React from 'react';
 const SelectNumber = ({ 
     max,
     numberOfPlayers,
-    teamsGenerated, 
     handleIncrement, 
     handleDecrement, 
 }) => {
 
     return (
-        teamsGenerated ? null :
         <div className="control-number">
             <p
             className="text-main"

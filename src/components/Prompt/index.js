@@ -2,8 +2,6 @@ import { connect } from "react-redux";
 import Prompt from './Prompt';
 import { showTeams } from '../../data/action';
 
-const mapStateToProps = ({ teamsGenerated }) => ({ teamsGenerated });
-
 const mapDispatchToProps = dispatch => {
     return {
         handleClick: () => { 
@@ -12,4 +10,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Prompt);
+export default connect(null, mapDispatchToProps)(Prompt);
