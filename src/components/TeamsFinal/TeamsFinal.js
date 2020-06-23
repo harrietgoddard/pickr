@@ -3,7 +3,7 @@ import TeamList1 from '../TeamList/TeamList1';
 import TeamList2 from '../TeamList/TeamList2';
 import TeamKit from '../TeamKit/';
 
-const TeamsFinal = ({ color1, color2 }) => {
+const TeamsFinal = ({ color1, color2, home }) => {
 
     return (
         <>
@@ -12,13 +12,15 @@ const TeamsFinal = ({ color1, color2 }) => {
                 <TeamKit
                 name={ "Team 1" }
                 color={ color1 }
+                home={ home === 1 }
                 />
             </div>
             <div className="team-list-2-final">
                 <TeamList2 />
                 <TeamKit
                 name={ "Team 2" }
-                color={ color2 } 
+                color={ color2 }
+                home={ home === 2 } 
                 />
             </div>
         </>

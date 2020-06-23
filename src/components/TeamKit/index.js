@@ -1,10 +1,14 @@
 import React from 'react';
 
-const TeamKit = ({ name, color }) => {
+const TeamKit = ({ name, color, home }) => {
+
+    let homeOrAway = home ? "H" : "A"
 
     return (
         <>
-            <h2 className="team-title">{ name }</h2>
+            <h2 className="team-title">
+                { name + " (" + homeOrAway + ")" }
+            </h2>
             <div 
                 className="icon-container"
                 style={{ background: color }}
