@@ -5,13 +5,12 @@ import GenerateTeams from '../GenerateTeams/';
 import Prompt from '../Prompt/';
 import Reset from '../Reset/';
 import Error from '../Error/';
-import { maxNoOfPlayers } from '../../data/settings';
 
-const ControlPanel = () => {
+const ControlPanel = ({ max }) => {
 
     return (
         <section className="control-panel">
-            <SelectNumber max={ maxNoOfPlayers }/>
+            <SelectNumber max={ max }/>
             <PlayerForm />
             <GenerateTeams />
             <Error />
