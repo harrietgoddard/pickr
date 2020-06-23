@@ -1,18 +1,26 @@
 import React from 'react';
 
-const TeamList = ({ playersTeam }) => {
+const TeamList = ({ playersTeam, color, teamsComplete }) => {
 
     return (
-            <ul className="team-list">
-                { playersTeam.map((player, index) => {
-                    return (
-                        <li className="player-card" key={ index }>
-                            <p className="text-card">{ player.name }</p>
-                            <p className="text-card">Skill - { player.skill }</p>
-                        </li>
-                    )
-                })}
-            </ul>
+
+        !teamsComplete ? null :
+   
+        <ul className="team-list">
+            { playersTeam.map((player, index) => {
+                return (
+                    <li 
+                        className="player-card" 
+                        key={ index }
+                        style={{ background: color + "80"}}
+                    >
+                        <p className="text-card">{ player.name }</p>
+                        <p className="text-card">skill - { player.skill }</p>
+                    </li>
+                )
+            })}
+        </ul>
+           
     );
 
 };

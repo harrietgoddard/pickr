@@ -173,6 +173,19 @@ const showTeams = state => {
     };
 };
 
+const setColor = (state, { team, color }) => {
+    
+    let color1 = team === 1 ? color : state.color1;
+
+    let color2 = team === 2 ? color : state.color2;
+    
+    return {
+        ...state,
+        color1,
+        color2,
+    };
+};
+
 const reducer = (state, action) => {
     switch(action.type) {
         case "CHANGE_NO_OF_PLAYERS": return checkNoOfPlayers(changeNoOfPlayers(state, action));
@@ -183,6 +196,7 @@ const reducer = (state, action) => {
         case "TOGGLE_HOME": return toggleHome(state);
         case "GET_PREDICTIONS": return getPredictions(state);
         case "SHOW_TEAMS": return showTeams(state);
+        case "SET_COLOR": return setColor(state, action);
         case "RESET": return initialState;
         default: return state;
     };
