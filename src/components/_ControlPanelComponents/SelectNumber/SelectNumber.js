@@ -16,12 +16,12 @@ const SelectNumber = ({
             <button 
                 onClick={ handleIncrement }
                 disabled={ numberOfPlayers === max }
-                className="btn-arrow"
+                className="btn-small"
             >&#x25B2;</button>
             <button 
                 onClick={ handleDecrement }
                 disabled={ numberOfPlayers === min }
-                className="btn-arrow"
+                className="btn-small"
             >&#x25BC;</button>
         </div>
     );

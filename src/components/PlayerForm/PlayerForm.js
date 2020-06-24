@@ -73,7 +73,7 @@ class PlayerForm extends Component {
                 </div>
                 <button 
                     type="submit"
-                    className="btn-small btn-add"
+                    className="btn-medium btn-add"
                 >Add player</button>
             </form>
         );

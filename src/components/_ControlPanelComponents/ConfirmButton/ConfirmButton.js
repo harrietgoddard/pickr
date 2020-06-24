@@ -15,7 +15,7 @@ const ConfirmButton = ({ handleClick }) => {
             </p>
             <button 
                 onClick={ handleClick }
-                className="btn-small btn-generate"
+                className="btn-medium btn-generate"
             >Confirm teams</button>
         </div>
     );

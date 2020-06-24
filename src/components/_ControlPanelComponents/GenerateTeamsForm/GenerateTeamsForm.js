@@ -15,7 +15,7 @@ const GenerateTeamsForm = ({ balanced, handleClick, handleToggle }) => {
             <button
                 type="button" 
                 onClick={ handleClick }
-                className="btn-small btn-generate"
+                className="btn-medium btn-generate"
             >Generate teams</button>
         </form>
     );
