@@ -44,13 +44,13 @@ button {
 //highlight key action buttons
 
 .btn-add, .btn-generate, .btn-predictions {
-    background-color: var(--brickAlpha);
+    background-color: var(--shadedBrick);
 }
 
 //highlight home button
 
 .btn-active {
-    background-color: var(--brickAlpha);
+    background-color: var(--shadedBrick);
 }
 
 //button transitions
@@ -59,7 +59,7 @@ button {
 .btn-small:hover, 
 .btn-xsmall:hover {
     color: var(--brick);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: var(--shadedMid);
 }
 
 .btn-large:focus {

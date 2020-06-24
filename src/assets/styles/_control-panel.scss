@@ -2,7 +2,7 @@
     grid-row: 3 / 5;
     grid-column: 4 / 10;
     border: var(--border);
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: var(--shadedDark);
     padding: 1.5rem;
     @extend .vertical-align;
     justify-content: space-between;
