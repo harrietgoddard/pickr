@@ -12,6 +12,10 @@
 
     --fontMain: "Roboto", "Helvetica", sans-serif;
 
+    //border
+
+    --border: 2px solid white;
+
     //gutter
 
     --gutter: 1.5em;
@@ -29,6 +33,14 @@ main, section {
 /*
 * helper classes for alignment
 */
+
+//center items
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 //centrally align items vertically
 

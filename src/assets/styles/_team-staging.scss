@@ -1,0 +1,43 @@
+//team staging area headers
+
+.header-team-1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+    @extend .center;
+}
+
+.header-team-2 {
+    grid-row: 1 / 2;
+    grid-column: 10 / 13;
+    @extend .center;
+}
+
+//team cards
+
+.team-list-1 {
+    grid-row: 2 / 6;
+    grid-column: 1 / 4;
+    border: var(--border);
+    padding: 2rem;
+}
+
+.team-list-2 {
+    grid-row: 2 / 6;
+    grid-column: 10 / 13;
+    border: var(--border);
+    padding: 2rem;
+}
+
+//home/away buttons and text
+
+.home-btn-container-1 {
+    grid-row: 6 / 7;
+    grid-column: 1 / 4;
+    @extend .center;
+}
+
+.home-btn-container-2 {
+    grid-row: 6 / 7;
+    grid-column: 10 / 13;
+    @extend .center;
+}
