@@ -11,6 +11,10 @@
     @media screen and (max-width: 1175px) {
         grid-row: 2 / 3;
         grid-column: 3 / 11;
+
+        @media screen and (max-width: 768px) {
+            grid-column: 1 / 13;
+        }
     }
 }
 
