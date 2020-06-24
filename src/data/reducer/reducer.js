@@ -162,7 +162,8 @@ const getPredictions = state => {
             favouriteHome,
             favouriteSkills,
             unfavouriteSkills,
-        }
+        },
+        showPredictions: true,
     };
 };
 
