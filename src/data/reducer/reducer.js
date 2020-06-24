@@ -1,4 +1,4 @@
-import initialState from './initial';
+import initialState from '../initial';
 import { randomTeams, balancedTeams } from './teamPicker';
 import { calculateFavourite, calculateScores } from './predictor';
 

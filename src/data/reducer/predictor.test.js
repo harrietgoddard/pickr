@@ -4,7 +4,7 @@ import {
     calculateScores,
     calculateFavourite,
 } from './predictor';
-import { homeAdvantage } from './settings';
+import { homeAdvantage } from '../settings';
 
 it('totals team skills', () => {
 
