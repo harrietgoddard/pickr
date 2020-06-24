@@ -26,10 +26,22 @@ main, section {
     display: contents;
 }
 
-// helper class for centrally aligning items vertically
+/*
+* helper classes for alignment
+*/
+
+//centrally align items vertically
 
 .vertical-align {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+//space between items vertically
+
+.vertical-between {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
