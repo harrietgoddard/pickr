@@ -4,7 +4,7 @@ const ConfirmButton = ({ handleClick }) => {
 
     return (
         <div>
-            <p className="text-main customise">
+            <p className="text-large customise">
                 <span className="arrow bounce-left">
                     &#8592;
                 </span> 

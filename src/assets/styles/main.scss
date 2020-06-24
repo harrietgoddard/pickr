@@ -11,15 +11,17 @@
 @import '_team-list.scss';
 @import '_predictions.scss';
 
+//move to separate file
 .container {
     background-image: url(../images/football-team.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: teal;
+    background-color: var(--teal);
     background-blend-mode: multiply;
-    color: white;
+
     height: 100vh;
     padding: var(--gutter);
+    
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(12, 1fr);

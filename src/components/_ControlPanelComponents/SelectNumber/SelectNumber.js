@@ -11,7 +11,7 @@ const SelectNumber = ({
     return (
         <div className="control-number">
             <p
-            className="text-main"
+            className="text-large"
             >Select mode: { numberOfPlayers }-a-side</p>
             <button 
                 onClick={ handleIncrement }

@@ -13,14 +13,14 @@ const Predictions = ({ predictions, showPredictions, handleClick, homeAdvantage 
 
             { !showPredictions ? null :
                 <div className="predictions-text">
-                    <p>
+                    <p className="text-card-small">
                         { favouriteHome ? 
                             `Benefiting from a home advantage, ` :
                             `Despite team ${ unfavourite } having the home advantage, `
                         }
                         Team { favourite } are tipped to win, with an adjusted skills rating* of { favouriteSkills } (Team { unfavourite }: { unfavouriteSkills })
                     </p>
-                    <p>
+                    <p className="text-card-small">
                         *skills ratings assume a { homeAdvantage * 100 }% uplift for the home team
                     </p>
                 </div>

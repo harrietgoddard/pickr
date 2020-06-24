@@ -4,11 +4,9 @@
 
     //colors
 
-    --teal: #1DBFB4;
-    // --terracotta: #D67927;
+    --teal: #008080;
     --brick: #BF1D28;
     --brickAlpha: rgba(191, 29, 40, 0.5);
-    --offWhite: #efeef5;
 
     //fonts
 
@@ -22,10 +20,6 @@
 
 * {
     box-sizing: border-box;
-}
-
-body {
-    font-family: var(--fontMain);
 }
 
 main, section {
