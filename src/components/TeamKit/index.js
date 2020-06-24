@@ -15,7 +15,7 @@ const TeamKit = ({ name, color, home }) => {
             >
                 <img 
                     src={require("../../assets/icons/tshirt.svg")} alt="team kit"
-                    className="team-kit"
+                    className="icon"
                 />
             </div>
         </>
