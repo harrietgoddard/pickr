@@ -1,14 +1,23 @@
-.player-list-container {
-    grid-row: 5 / 7;
-    grid-column: 4 / 10;
-    border: 2px solid white;
-    padding: 2rem;
+//display delete player button outside of player card
+.btn-delete {
+    position: absolute;
+    right: -3rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .player-list {
+    //to allow room for delete player button
+    padding-right: 4rem;
+    //to allow vertical scrolling
     max-height: 100%;
-    padding: 0 5rem;
-    margin: 0 auto;
     overflow-y: auto;
     overflow-x: hidden;
+}
+
+.player-list-container {
+    grid-row: 5 / 7;
+    grid-column: 4 / 10;
+    border: var(--border);
+    padding: 2rem 4rem;
 }

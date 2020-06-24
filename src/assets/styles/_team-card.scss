@@ -1,0 +1,11 @@
+//to allow vertical scrolling
+.team-list {
+    max-height: 70%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.team-list-1, .team-list-2 {
+    @extend .vertical-between;
+    height: 100%;
+}

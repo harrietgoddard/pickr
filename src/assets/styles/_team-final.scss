@@ -1,0 +1,21 @@
+.team-list-1-final {
+    grid-row: 3 / 7;
+    grid-column: 4 / 7;
+}
+
+.team-list-2-final {
+    grid-row: 3 / 7;
+    grid-column: 7 / 10;
+}
+
+.team-list-1-final, .team-list-2-final {
+    border: var(--border);
+    padding: 2rem;
+    @extend .vertical-align;
+    justify-content: space-between;
+
+    ul {
+        width: 100%;
+        max-height: 60%;
+    }
+}

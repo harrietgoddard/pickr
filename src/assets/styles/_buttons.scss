@@ -2,7 +2,7 @@
 
 .btn {
     color: white;
-    border: 2px solid white;
+    border: var(--border);
     background-color: transparent;
 }
 
@@ -39,10 +39,6 @@ button {
 .btn-xsmall {
     @extend .btn;
     font-size: 1rem;
-    position: absolute;
-    right: -3rem;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 //highlight key action buttons
