@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
-import Reset from './Reset';
-import { reset } from '../../data/action';
+import ResetButton from './ResetButton';
+import { reset } from '../../../data/action';
 
 const mapDispatchToProps = dispatch => {
     return {
@@ -10,4 +10,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(null, mapDispatchToProps)(Reset);
+export default connect(null, mapDispatchToProps)(ResetButton);

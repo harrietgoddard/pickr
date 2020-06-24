@@ -1,11 +1,11 @@
 import React from 'react';
 import ControlPanel from '../ControlPanel/';
 import PlayerList from '../PlayerList/';
-import TeamStagingArea from '../TeamStagingArea/';
+import TeamStaging from '../TeamStaging/';
 import Predictions from '../Predictions/';
 import { minNoOfPlayers, maxNoOfPlayers, homeAdvantage } from '../../data/settings';
-import Reset from '../Reset/';
-import TeamsFinal from '../TeamsFinal';
+import ResetButton from '../_ControlPanelComponents/ResetButton';
+import TeamConfirmed from '../TeamConfirmed';
 
 const Main = ({ teamsConfirmed }) => {
 
@@ -23,16 +23,16 @@ const Main = ({ teamsConfirmed }) => {
 
                     <PlayerList />
             
-                    <TeamStagingArea />
+                    <TeamStaging />
 
                 </> :
             
                 <>
-                    <TeamsFinal />
+                    <TeamConfirmed />
                     
                     <div className="predictions-container">
                         <Predictions homeAdvantage={ homeAdvantage }/>
-                        <Reset />
+                        <ResetButton />
                     </div>
                 </>
 

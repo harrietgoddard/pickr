@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
-import Prompt from './Prompt';
-import { showTeams } from '../../data/action';
+import ConfirmButton from './ConfirmButton';
+import { showTeams } from '../../../data/action';
 
 const mapDispatchToProps = dispatch => {
     return {
@@ -10,4 +10,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(null, mapDispatchToProps)(Prompt);
+export default connect(null, mapDispatchToProps)(ConfirmButton);

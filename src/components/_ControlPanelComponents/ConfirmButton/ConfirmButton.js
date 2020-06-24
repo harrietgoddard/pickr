@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Prompt = ({ handleClick }) => {
+const ConfirmButton = ({ handleClick }) => {
 
     return (
         <div>
@@ -22,4 +22,4 @@ const Prompt = ({ handleClick }) => {
 
 };
 
-export default Prompt;
+export default ConfirmButton;

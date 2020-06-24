@@ -1,9 +1,9 @@
 import React from 'react';
 import TeamList1 from '../TeamList/TeamList1';
 import TeamList2 from '../TeamList/TeamList2';
-import TeamKit from '../TeamKit/';
+import TeamKit from '../TeamKit';
 
-const TeamsFinal = ({ color1, color2, home }) => {
+const TeamConfirmed = ({ color1, color2, home }) => {
 
     return (
         <>
@@ -28,4 +28,4 @@ const TeamsFinal = ({ color1, color2, home }) => {
 
 };
 
-export default TeamsFinal;
+export default TeamConfirmed;

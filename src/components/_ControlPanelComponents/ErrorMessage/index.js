@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Error = () => {
+const ErrorMessage = () => {
 
     return (
         <div className="control-message">
@@ -13,4 +13,4 @@ const Error = () => {
 
 };
 
-export default Error;
+export default ErrorMessage;

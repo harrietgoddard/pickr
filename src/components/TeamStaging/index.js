@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
-import TeamStagingArea from './TeamStagingArea';
+import TeamStaging from './TeamStaging';
 
 const mapStateToProps = ({ teamsGenerated }) => ({ teamsGenerated });
 
-export default connect(mapStateToProps)(TeamStagingArea);
+export default connect(mapStateToProps)(TeamStaging);

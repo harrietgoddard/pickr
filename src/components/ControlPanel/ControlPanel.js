@@ -1,10 +1,10 @@
 import React from 'react';
-import SelectNumber from '../SelectNumber/';
+import SelectNumber from '../_ControlPanelComponents/SelectNumber/';
 import PlayerForm from '../PlayerForm/';
-import GenerateTeams from '../GenerateTeams/';
-import Prompt from '../Prompt/';
-import Reset from '../Reset/';
-import Error from '../Error/';
+import GenerateTeamsForm from '../_ControlPanelComponents/GenerateTeamsForm';
+import ConfirmButton from '../_ControlPanelComponents/ConfirmButton';
+import ResetButton from '../_ControlPanelComponents/ResetButton';
+import ErrorMessage from '../_ControlPanelComponents/ErrorMessage';
 
 const ControlPanel = ({ 
     min,
@@ -26,18 +26,18 @@ const ControlPanel = ({
             }
 
             { !playerInputComplete || teamsGenerated ? null :
-                <GenerateTeams />
+                <GenerateTeamsForm />
             }
 
             { !tooManyPlayers ? null :
-                <Error />
+                <ErrorMessage />
             }
 
             { !teamsGenerated ? null : 
-                <Prompt />
+                <ConfirmButton />
             }
 
-            <Reset />
+            <ResetButton />
             
         </section>
     );

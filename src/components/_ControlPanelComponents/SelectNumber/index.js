@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import SelectNumber from './SelectNumber';
-import { changeNumber } from '../../data/action';
+import { changeNumber } from '../../../data/action';
 
 const mapStateToProps = ({ numberOfPlayers }) => ({ numberOfPlayers });
 

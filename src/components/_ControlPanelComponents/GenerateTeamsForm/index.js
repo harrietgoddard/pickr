@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
-import GenerateTeams from './GenerateTeams';
-import { generateTeams, toggleBalanced } from '../../data/action';
+import GenerateTeamsForm from './GenerateTeamsForm';
+import { generateTeams, toggleBalanced } from '../../../data/action';
 
 const mapStateToProps = ({ balanced }) => ({ balanced });
 
@@ -11,4 +11,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(GenerateTeams);
+export default connect(mapStateToProps, mapDispatchToProps)(GenerateTeamsForm);

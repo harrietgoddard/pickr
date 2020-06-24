@@ -1,7 +1,7 @@
 import React from 'react';
 import FormField from './FormField';
 
-const GenerateTeams = ({ balanced, handleClick, handleToggle }) => {
+const GenerateTeamsForm = ({ balanced, handleClick, handleToggle }) => {
 
     return (
         <form>
@@ -22,4 +22,4 @@ const GenerateTeams = ({ balanced, handleClick, handleToggle }) => {
 
 };
 
-export default GenerateTeams;
+export default GenerateTeamsForm;
