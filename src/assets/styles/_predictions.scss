@@ -7,6 +7,13 @@
     justify-content: space-between;
     padding-bottom: 5rem;
     position: relative; //to allow reset button to be positioned in here
+
+    @media screen and (max-width: 1175px) {
+        grid-row: 6 / 8;
+        grid-column: 3 / 11;
+        flex-direction: column;
+        padding: 0 5rem 7rem 5rem;
+    }
 }
 
 .predictions-text {
