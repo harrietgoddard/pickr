@@ -1,14 +1,10 @@
 .text-input {
-    font-size: 1.3rem;
-    letter-spacing: 0.3rem;
-    font-weight: 500;
+    @extend .text-card;
+    color: black;
     text-align: center;
-    letter-spacing: normal;
     margin-bottom: 0.8em;
 }
 
 .form-field {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend .vertical-align;
 }
