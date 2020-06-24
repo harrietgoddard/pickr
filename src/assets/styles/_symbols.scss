@@ -7,6 +7,21 @@
     animation-iteration-count: infinite;
 }
 
+.arrow-mobile {
+    display: none;
+    text-align: center;
+
+    @media screen and (max-width: 1175px) {
+        display: block;
+    }
+}
+
+.arrow-desktop {
+    @media screen and (max-width: 1175px) {
+        display: none;
+    }
+}
+
 //arrow animations
 
 .bounce-down {
@@ -17,6 +32,7 @@
 .bounce-left {
     animation-name: bounce-left;
     animation-timing-function: ease;
+
 }
 
 .bounce-right {
