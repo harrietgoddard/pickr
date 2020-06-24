@@ -3,6 +3,10 @@
     max-height: 70%;
     overflow-y: auto;
     overflow-x: hidden;
+
+    @media screen and (max-width: 1175px) {
+        max-height: 35vh;
+    }
 }
 
 .team-list-1, .team-list-2 {

@@ -13,6 +13,10 @@
     max-height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
+
+    @media screen and (max-width: 1175px) {
+        max-height: 20vh;
+    }
 }
 
 .player-list-container {
@@ -20,4 +24,9 @@
     grid-column: 4 / 10;
     border: var(--border);
     padding: 2rem 4rem;
+
+    @media screen and (max-width: 1175px) {
+        grid-row: 3 / 4;
+        grid-column: 3 / 11;
+    }
 }

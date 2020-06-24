@@ -12,4 +12,11 @@
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(12, 1fr);
     grid-gap: var(--gutter);
+
+    @media screen and (max-width: 1175px) {
+        // height: 250vh;
+        height: auto;
+        grid-template-rows: repeat(7, 1fr);
+    }
+
 }

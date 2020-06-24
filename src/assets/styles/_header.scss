@@ -5,6 +5,11 @@
     padding: 2rem 0;
     @extend .vertical-align;
     justify-content: space-between;
+
+    @media screen and (max-width: 1175px) {
+        grid-row: 1 / 2;
+        grid-column: 3 / 11;
+    }
 }
 
 //to line up the small title and the large title

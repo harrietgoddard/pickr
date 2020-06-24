@@ -7,6 +7,11 @@
     @extend .vertical-align;
     justify-content: space-between;
     position: relative; //to position reset button inside player form
+
+    @media screen and (max-width: 1175px) {
+        grid-row: 2 / 3;
+        grid-column: 3 / 11;
+    }
 }
 
 .select-number, .customise {
