@@ -7,6 +7,7 @@ import Reset from '../Reset/';
 import Error from '../Error/';
 
 const ControlPanel = ({ 
+    min,
     max,
     tooManyPlayers,
     playerInputComplete,
@@ -17,7 +18,7 @@ const ControlPanel = ({
         <section className="control-panel">
             
             { teamsGenerated ? null :
-                <SelectNumber max={ max }/> 
+                <SelectNumber max={ max } min={ min }/> 
             }
 
             { playerInputComplete || tooManyPlayers ? null : 

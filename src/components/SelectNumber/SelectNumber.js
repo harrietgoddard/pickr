@@ -1,6 +1,7 @@
 import React from 'react';
 
 const SelectNumber = ({ 
+    min,
     max,
     numberOfPlayers,
     handleIncrement, 
@@ -19,7 +20,7 @@ const SelectNumber = ({
             >&#x25B2;</button>
             <button 
                 onClick={ handleDecrement }
-                disabled={ numberOfPlayers === 1 }
+                disabled={ numberOfPlayers === min }
                 className="btn-arrow"
             >&#x25BC;</button>
         </div>

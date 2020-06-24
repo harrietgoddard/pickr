@@ -3,7 +3,7 @@ import ControlPanel from '../ControlPanel/';
 import PlayerList from '../PlayerList/';
 import TeamStagingArea from '../TeamStagingArea/';
 import Predictions from '../Predictions/';
-import { maxNoOfPlayers, homeAdvantage } from '../../data/settings';
+import { minNoOfPlayers, maxNoOfPlayers, homeAdvantage } from '../../data/settings';
 import Reset from '../Reset/';
 import TeamsFinal from '../TeamsFinal';
 
@@ -16,7 +16,10 @@ const Main = ({ teamsConfirmed }) => {
 
                 <>
 
-                    <ControlPanel max={ maxNoOfPlayers } />
+                    <ControlPanel 
+                        max={ maxNoOfPlayers }
+                        min={ minNoOfPlayers } 
+                    />
 
                     <PlayerList />
             
