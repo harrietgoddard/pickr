@@ -9,7 +9,7 @@ const SelectNumber = ({
 }) => {
 
     return (
-        <div className="control-number">
+        <div className="select-number">
             <p
             className="text-large"
             >Select mode: { numberOfPlayers }-a-side</p>

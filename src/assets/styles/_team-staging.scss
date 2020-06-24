@@ -46,3 +46,7 @@
 .home-btn-container-1, .home-btn-container-2 {
     @extend .center;
 }
+
+.home-container {
+    @extend .vertical-align;
+}

@@ -32,8 +32,12 @@ const Main = ({ teamsConfirmed }) => {
                     
                     <div className="predictions-container">
                         <Predictions homeAdvantage={ homeAdvantage }/>
-                        <ResetButton />
+                        
+                        <div className="reset-final">
+                            <ResetButton />
+                        </div>
                     </div>
+
                 </>
 
             }

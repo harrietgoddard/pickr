@@ -9,6 +9,7 @@
 }
 
 .team-list-1-final, .team-list-2-final {
+    background-color: var(--shadedDark);
     border: var(--border);
     padding: 2rem;
     @extend .vertical-align;

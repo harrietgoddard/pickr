@@ -36,8 +36,9 @@ const ControlPanel = ({
             { !teamsGenerated ? null : 
                 <ConfirmButton />
             }
-
-            <ResetButton />
+            <div className="reset-control-panel">
+                <ResetButton />
+            </div>
             
         </section>
     );

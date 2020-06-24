@@ -1,55 +1,35 @@
 .control-panel {
     grid-row: 3 / 5;
     grid-column: 4 / 10;
-    border: 2px solid white;
+    border: var(--border);
+    background-color: var(--shadedDark);
     padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend .vertical-align;
     justify-content: space-between;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.6);
+    position: relative; //to position reset button inside player form
 }
 
-.control-number {
+.select-number, .customise {
     display: flex;
     align-items: center;
 
     p {
-        margin-right: 0.8em;
+        margin-right: 0.8rem;
     }
 
-    button {
-        margin-right: 0.5em;
+    button:last-child {
+        margin-left: 0.5rem;
     }
 }
 
-.form-container {
-    display: flex;
-    // align-content: space-between;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 1.2em;
-    width: 100%;
-}
-
-.form-inputs {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    // justify-content: space-between;
-    // width: 100%;
-    // margin-bottom: 1.2em;
-}
-
+//balance teams by skill and delete players pop ups
 .control-message {
+    //position message centrally in control panel 
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    @extend .vertical-align;
 
     input {
         width: 20px;
@@ -57,51 +37,9 @@
     }
 }
 
-//put in symbols file
-
-.arrow {
-    font-size: 2rem;
-    font-weight: 700;
-    color: red;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    display: inline-block;
-}
-
-.bounce-down {
-    animation-name: bounce-down;
-    animation-timing-function: ease;
-}
-
-@keyframes bounce-down {
-    0%   { transform: translateY(0); }
-    50%  { transform: translateY(0.5em); }
-    100% { transform: translateY(0); }
-}
-
-.bounce-left {
-    animation-name: bounce-left;
-    animation-timing-function: ease;
-}
-
-@keyframes bounce-left {
-    0%   { transform: translateX(0); }
-    50%  { transform: translateX(-0.5em); }
-    100% { transform: translateX(0); }
-}
-
-.bounce-right {
-    animation-name: bounce-right;
-    animation-timing-function: ease;
-}
-
-@keyframes bounce-right {
-    0%   { transform: translateX(0); }
-    50%  { transform: translateX(0.5em); }
-    100% { transform: translateX(0); }
-}
-
-.customise {
-    display: flex;
-    align-items: center;
+//position generate teams button in control panel
+.btn-generate {
+    position: absolute;
+    bottom: 1.5rem;
+    left: calc(1.2rem + 1.5rem); 
 }
