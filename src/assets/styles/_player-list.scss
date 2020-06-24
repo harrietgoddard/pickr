@@ -1,5 +1,13 @@
+//display delete player button outside of player card
+.btn-delete {
+    position: absolute;
+    right: -3rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .player-list {
-     //to allow room for delete player button
+    //to allow room for delete player button
     padding-right: 4rem;
     //to allow vertical scrolling
     max-height: 100%;
