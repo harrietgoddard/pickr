@@ -49,5 +49,6 @@
 }
 
 .text-card-small {
-    @include mainText(1rem, 400, normal);
+    @include mainText(1.1rem, 400, normal);
+    line-height: 1.5rem;
 }
