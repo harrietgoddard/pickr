@@ -5,7 +5,7 @@ const ErrorMessage = () => {
     return (
         <div className="control-message">
             <p
-                className="form-label"
+                className="text-small"
             >Delete players</p>
             <p className="arrow bounce-down">&#8595;</p>
         </div>

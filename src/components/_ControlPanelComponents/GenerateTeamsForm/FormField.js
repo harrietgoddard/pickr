@@ -15,7 +15,7 @@ const FormField = ({
         <div className="control-message">
             <label 
                 htmlFor={ name }
-                className="form-label"
+                className="text-small"
             >{ label }</label>
             <input 
                 id={ name } 

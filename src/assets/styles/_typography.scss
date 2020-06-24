@@ -1,46 +1,53 @@
-.pre-title {
+//main typography mixin
+
+@mixin mainText($fontSize, $fontWeight, $letterSpacing) {
+    font-family: var(--fontMain);
+    color: white;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    letter-spacing: $letterSpacing;
+}
+
+//titles
+
+.title-main {
+    @include mainText(5rem, 200, normal);
+}
+
+.title-main-small {
+    @include mainText(0.8rem, 500, 0.3rem);
     text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 0.3rem;
-    font-size: 0.8rem;
 }
 
-.main-title {
-    font-weight: 200;
-    font-size: 5rem;
+.title-sub {
+    @include mainText(1.7rem, 300, normal);
 }
 
-.sub-title {
-    font-size: 1.1rem;
-    letter-spacing: 0.3rem;
-    font-weight: 500;
+//main text
+
+.text-large {
+    @include mainText(1.3rem, 500, 0.3rem);
 }
 
-.team-title {
-    font-weight: 300;
-    font-size: 1.7rem
-}
-
-.text-main {
-    font-size: 1.3rem;
-    letter-spacing: 0.3rem;
-    font-weight: 500;
+.text-medium {
+    @include mainText(1.1rem, 500, 0.3rem);
 }
 
 .text-small {
-    font-size: 0.8rem;
-    letter-spacing: 0.3rem;
+    @include mainText(1rem, 500, 0.3rem);
+    margin-bottom: 0.5em;
 }
 
-.form-label {
-    margin-bottom: 0.5em;
-    font-size: 1rem;
-    letter-spacing: 0.3rem;
-    font-weight: 500;
+.text-xsmall {
+    @include mainText(0.8rem, 400, 0.3rem);
 }
+
+//card text
 
 .text-card {
-    font-size: 1.3rem;
-    font-weight: 400;
+    @include mainText(1.3rem, 400, normal);
 }
 
+.text-card-small {
+    @include mainText(1rem, 400, normal);
+}

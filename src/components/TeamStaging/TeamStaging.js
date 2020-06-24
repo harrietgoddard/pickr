@@ -15,7 +15,7 @@ const TeamStaging = ({ teamsGenerated }) => {
 
                 <header className="header-team-1">
                     {/* make this a variable: */}
-                    <h2 className="team-title">Team 1</h2>
+                    <h2 className="title-sub">Team 1</h2>
                 </header> 
 
                 <div className="team-list-1">
@@ -36,7 +36,7 @@ const TeamStaging = ({ teamsGenerated }) => {
             <section>
 
                 <header className="header-team-2">
-                    <h2 className="team-title">Team 2</h2>
+                    <h2 className="title-sub">Team 2</h2>
                 </header>
 
                 <div className="team-list-2">

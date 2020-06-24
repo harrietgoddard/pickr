@@ -6,7 +6,7 @@ const TeamKit = ({ name, color, home }) => {
 
     return (
         <>
-            <h2 className="team-title">
+            <h2 className="title-sub">
                 { name + " (" + homeOrAway + ")" }
             </h2>
             <div 
