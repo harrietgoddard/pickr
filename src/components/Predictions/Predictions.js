@@ -8,7 +8,7 @@ const Predictions = ({ predictions, showPredictions, handleClick, homeAdvantage 
         <section>
             <button 
                 onClick={ handleClick }
-                className="btn-small btn-predictions"
+                className="btn-medium btn-predictions"
             >Get predictions</button>
 
             { !showPredictions ? null :

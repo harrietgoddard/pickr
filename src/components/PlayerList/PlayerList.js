@@ -24,7 +24,7 @@ class PlayerList extends Component  {
                                     <p className="text-card">{ player.name }</p>
                                     <p className="text-card">skill - { player.skill }</p>
                                     <button
-                                        className="btn-delete"
+                                        className="btn-xsmall"
                                         onClick={ () => handleClick(index) }
                                     >x</button>
                                 </li>
