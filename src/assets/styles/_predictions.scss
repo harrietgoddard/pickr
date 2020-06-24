@@ -3,9 +3,7 @@
     grid-column: 10 / 13;
     position: relative;
 
-    p {
-        font-size: 1.1rem;
-        line-height: 1.5rem;
+    p:first-child {
         margin-bottom: 2rem;
     }
 }
