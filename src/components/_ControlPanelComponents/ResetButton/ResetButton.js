@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Reset = ({ handleClick }) => {
+const ResetButton = ({ handleClick }) => {
 
     return (
         <button 
@@ -11,4 +11,4 @@ const Reset = ({ handleClick }) => {
 
 };
 
-export default Reset;
+export default ResetButton;

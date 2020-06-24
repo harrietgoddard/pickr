@@ -6,7 +6,7 @@ import HomeButton2 from '../HomeButton/HomeButton2';
 import ColorPicker1 from '../ColorPicker/ColorPicker1';
 import ColorPicker2 from '../ColorPicker/ColorPicker2';
 
-const TeamStagingArea = ({ teamsGenerated }) => {
+const TeamStaging = ({ teamsGenerated }) => {
 
     return (
         <section>
@@ -59,4 +59,4 @@ const TeamStagingArea = ({ teamsGenerated }) => {
 
 };
 
-export default TeamStagingArea;
+export default TeamStaging;

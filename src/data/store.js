@@ -1,6 +1,6 @@
 import { createStore, compose } from 'redux';
 import persistState from 'redux-localstorage';
-import reducer from './reducer';
+import reducer from './reducer/reducer';
 import initial from './initial';
 
 //localstorage middleware and redux dev tools

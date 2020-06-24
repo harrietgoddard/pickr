@@ -1,4 +1,4 @@
-import { homeAdvantage } from './settings';
+import { homeAdvantage } from '../settings';
 
 /*
 * takes a team (an array of player objects) and returns the total
