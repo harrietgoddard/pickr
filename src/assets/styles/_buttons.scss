@@ -59,17 +59,9 @@ button {
 .btn-small:hover, 
 .btn-xsmall:hover {
     color: var(--brick);
-    background: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .btn-large:focus {
     outline: none;
-}
-
-//move these elsewhere
-
-.btn-predictions {
-    position: absolute;
-    bottom: 5rem;
-    right: calc(1.2em + 1.5em);
 }

@@ -12,7 +12,7 @@ const TeamList = ({ playersTeam, color, teamsGenerated }) => {
                     <li 
                         className="player-card" 
                         key={ index }
-                        style={{ background: color + "80"}}
+                        style={{ backgroundColor: color + "80"}}
                     >
                         <p className="text-card">{ player.name }</p>
                         <p className="text-card">skill - { player.skill }</p>

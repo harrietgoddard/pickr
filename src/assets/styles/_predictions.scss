@@ -1,14 +1,26 @@
 .predictions-container {
     grid-row: 3 / 7;
     grid-column: 10 / 13;
-    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+    position: relative; //to allow reset button to be positioned in here
+}
+
+.predictions-text {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
 
     p:first-child {
         margin-bottom: 2rem;
     }
 }
 
-.predictions-text {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 2rem;
+.reset-final {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1.5rem;
 }

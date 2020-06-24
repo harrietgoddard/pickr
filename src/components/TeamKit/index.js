@@ -11,7 +11,7 @@ const TeamKit = ({ name, color, home }) => {
             </h2>
             <div 
                 className="icon-container"
-                style={{ background: color }}
+                style={{ backgroundColor: color }}
             >
                 <img 
                     src={require("../../assets/icons/tshirt.svg")} alt="team kit"
