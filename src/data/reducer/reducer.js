@@ -148,10 +148,10 @@ const getPredictions = state => {
     let favouriteHome = favourite === home;
 
     //returns the favourite team's total skills value
-    let favouriteSkills = favourite === 1 ? scores.team1Total : scores.team2Total;
+    let favouriteSkills = favourite === 1 ? scores.team1Total.toFixed(2) : scores.team2Total.toFixed(2);
 
     //returns the other team's total skills value
-    let unfavouriteSkills = favourite === 1 ? scores.team2Total : scores.team1Total;
+    let unfavouriteSkills = favourite === 1 ? scores.team2Total.toFixed(2) : scores.team1Total.toFixed(2);
 
     return {
         ...state,

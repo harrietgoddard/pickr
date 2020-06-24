@@ -18,7 +18,7 @@ const Predictions = ({ predictions, showPredictions, handleClick, homeAdvantage 
                             `Benefiting from a home advantage, ` :
                             `Despite team ${ unfavourite } having the home advantage, `
                         }
-                        Team { favourite } are tipped to win, with an adjusted skills rating* of { favouriteSkills } (Team { unfavourite } : { unfavouriteSkills })
+                        Team { favourite } are tipped to win, with an adjusted skills rating* of { favouriteSkills } (Team { unfavourite }: { unfavouriteSkills })
                     </p>
                     <p>
                         *skills ratings assume a { homeAdvantage * 100 }% uplift for the home team
