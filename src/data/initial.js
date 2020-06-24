@@ -6,10 +6,10 @@ const initial = {
     tooManyPlayers: false,
 
     playerInputComplete: false,
+    balanced: false,
     teamsGenerated: false,
     teamsConfirmed: false,
 
-    balanced: false,
 
     players: [],
     playersTeam1: [],
@@ -17,8 +17,9 @@ const initial = {
 
     color1: "",
     color2: "",
-
     home: 1,
+
+    showPredictions: false,
     predictions: {},
 };
 
