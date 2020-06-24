@@ -18,6 +18,6 @@
 .player-list-container {
     grid-row: 5 / 7;
     grid-column: 4 / 10;
-    border: 2px solid white;
+    border: var(--border);
     padding: 2rem 4rem;
 }
