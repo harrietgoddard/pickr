@@ -68,26 +68,8 @@ button {
 
 //move these elsewhere
 
-.btn-reset {
-    position: absolute;
-    bottom: 1.5rem;
-    right: calc(1.2em + 1.5em);
-}
-
 .btn-predictions {
     position: absolute;
     bottom: 5rem;
     right: calc(1.2em + 1.5em);
-}
-
-.btn-generate {
-    position: absolute;
-    bottom: 1.5rem;
-    left: calc(1.2em + 1.5em); 
-}
-
-.home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }

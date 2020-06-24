@@ -1,0 +1,43 @@
+.arrow {
+    font-size: 2rem;
+    font-weight: 700;
+    color: red;
+    display: inline-block;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+//arrow animations
+
+.bounce-down {
+    animation-name: bounce-down;
+    animation-timing-function: ease;
+}
+
+.bounce-left {
+    animation-name: bounce-left;
+    animation-timing-function: ease;
+}
+
+.bounce-right {
+    animation-name: bounce-right;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce-down {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(0.5em); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes bounce-left {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(-0.5em); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes bounce-right {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(0.5em); }
+    100% { transform: translateX(0); }
+}
