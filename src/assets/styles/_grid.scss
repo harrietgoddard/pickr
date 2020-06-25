@@ -30,6 +30,7 @@
         padding: var(--gutterWide);
 
         @media screen and (max-width: 768px) {
+            background-image: none;
             padding: var(--gutter);
         }
     }

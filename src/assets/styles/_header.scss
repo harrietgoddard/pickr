@@ -15,6 +15,14 @@
         //     grid-column: 1 / 13;
         // }
     }
+
+    @media screen and (max-width: 768px) {
+        background-image: url(../images/football-team.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: var(--teal);
+        background-blend-mode: multiply;
+    }
 }
 
 //to line up the small title and the large title
