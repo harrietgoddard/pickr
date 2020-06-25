@@ -11,7 +11,7 @@ const TeamStaging = ({ teamsGenerated }) => {
     return (
         <section>
 
-            <section className="team-staging-area">
+            <section>
 
                 <header className="header-team-1">
                     {/* make this a variable: */}
@@ -33,7 +33,7 @@ const TeamStaging = ({ teamsGenerated }) => {
 
             </section>
 
-            <section className="team-staging-area">
+            <section>
 
                 <header className="header-team-2">
                     <h2 className="title-sub">Team 2</h2>

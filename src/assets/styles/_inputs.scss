@@ -14,8 +14,8 @@ input[type=text] {
     max-width: 220px;
 }
 
-//remove default firefox styling to improve contrast with background
+//align firefox range input styling to default Chrome styling, to improve contrast with background
 input[type=range] {
     -moz-appearance: none;
-    background-color: blue;
+    background-color: #0000FF;
 }

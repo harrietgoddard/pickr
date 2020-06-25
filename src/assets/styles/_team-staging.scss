@@ -3,30 +3,19 @@
 .header-team-1 {
     grid-row: 1 / 2;
     grid-column: 1 / 4;
-
-    @media screen and (max-width: 1175px) {
-        grid-row: 4 / 6;
-        grid-column: 3 / 11;
-        align-items: flex-start;
-        padding: 2rem;
-    }
-
 }
 
 .header-team-2 {
     grid-row: 1 / 2;
     grid-column: 10 / 13;
-
-    @media screen and (max-width: 1175px) {
-        grid-row: 6 / 8;
-        grid-column: 3 / 11;
-        align-items: flex-start;
-        padding: 2rem;
-    }
 }
 
 .header-team-1, .header-team-2 {
     @extend .center;
+
+    @media screen and (max-width: 1175px) {
+        padding: 2rem;
+    }
 }
 
 //team cards
@@ -34,29 +23,11 @@
 .team-list-1 {
     grid-row: 2 / 6;
     grid-column: 1 / 4;
-
-    @media screen and (max-width: 1175px) {
-        grid-row: 4 / 6;
-        grid-column: 3 / 11;
-
-        @media screen and (max-width: 900px) {
-            grid-column: 1 / 13;
-        }
-    }
 }
 
 .team-list-2 {
     grid-row: 2 / 6;
     grid-column: 10 / 13;
-
-    @media screen and (max-width: 1175px) {
-        grid-row: 6 / 8;
-        grid-column: 3 / 11;
-
-        @media screen and (max-width: 900px) {
-            grid-column: 1 / 13;
-        }
-    }
 }
 
 .team-list-1, .team-list-2 {
@@ -68,45 +39,22 @@
     }
 }
 
-//home/away buttons and text
+//'home/away' buttons and text
 
 .home-btn-container-1 {
     grid-row: 6 / 7;
     grid-column: 1 / 4;
-
-    @media screen and (max-width: 1175px) {
-        grid-row: 4 / 6;
-        grid-column: 3 / 11;
-
-        @media screen and (max-width: 900px) {
-            grid-column: 1 / 13;
-        }
-    }
 }
 
 .home-btn-container-2 {
     grid-row: 6 / 7;
     grid-column: 10 / 13;
-
-    @media screen and (max-width: 1175px) {
-        grid-row: 6 / 8;
-        grid-column: 3 / 11;
-
-        @media screen and (max-width: 900px) {
-            grid-column: 1 / 13;
-        }
-    }
 }
 
 .home-btn-container-1, .home-btn-container-2 {
     @extend .center;
 
     @media screen and (max-width: 1175px) {
-        // align-items: flex-end;
-        // justify-content: flex-end;
-        // padding: 2rem;
-        // position: absolute;
-        // transform: translateY(-100%);
         justify-content: flex-end;
         padding: 2rem;
     }
@@ -119,10 +67,4 @@
 
 .home-container {
     @extend .vertical-align;
-}
-
-@media screen and (max-width: 1175px) {
-    .team-staging-area {
-        // position: relative;
-    }
 }

@@ -8,14 +8,9 @@
 
     @media screen and (max-width: 1175px) {
         margin-bottom: var(--gutter);
-        // grid-row: 1 / 2;
-        // grid-column: 3 / 11;
-
-        // @media screen and (max-width: 900px) {
-        //     grid-column: 1 / 13;
-        // }
     }
 
+    //place background image in header only on mobile
     @media screen and (max-width: 768px) {
         background-image: url(../images/football-team.jpg);
         background-size: cover;
@@ -25,7 +20,7 @@
     }
 }
 
-//to line up the small title and the large title
+//to visually align the small title and the large title
 .title-main-small {
     transform: translateX(3%);
 }

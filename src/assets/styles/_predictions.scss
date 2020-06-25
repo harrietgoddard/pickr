@@ -9,14 +9,8 @@
     position: relative; //to allow reset button to be positioned in here
 
     @media screen and (max-width: 1175px) {
-        grid-row: 6 / 8;
-        grid-column: 3 / 11;
         flex-direction: column;
         padding: 0 5rem 7rem 5rem;
-
-        @media screen and (max-width: 900px) {
-            grid-column: 1 / 13;
-        }
     }
 
     @media screen and (max-width: 768px) {

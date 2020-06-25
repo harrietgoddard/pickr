@@ -28,6 +28,7 @@
 .text-large {
     @include mainText(1.3rem, 500, 0.3rem);
 
+    //reduce size of control panel messages on mobile
     @media screen and (max-width: 768px) {
         @include mainText(1rem, 500, 0.1rem);
     }

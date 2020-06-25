@@ -1,13 +1,13 @@
+button {
+    cursor: pointer;
+}
+
 //buttons helper class
 
 .btn {
     color: white;
     border: var(--border);
     background-color: transparent;
-}
-
-button {
-    cursor: pointer;
 }
 
 //main button styles
@@ -47,7 +47,7 @@ button {
     background-color: var(--shadedBrick);
 }
 
-//highlight home button
+//highlight 'home' button
 
 .btn-active {
     background-color: var(--shadedBrick);
