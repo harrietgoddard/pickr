@@ -29,7 +29,7 @@
         grid-row: 3 / 4;
         grid-column: 3 / 11;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 900px) {
             grid-column: 1 / 13;
         }
     }
