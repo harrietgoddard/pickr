@@ -8,3 +8,9 @@
 .form-field {
     @extend .vertical-align;
 }
+
+//remove default firefox styling to improve contrast with background
+input[type=range] {
+    -moz-appearance: none;
+    background-color: blue;
+}
