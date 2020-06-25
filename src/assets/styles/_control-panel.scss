@@ -19,10 +19,11 @@
         // }
     }
 
-    // @media screen and (max-width: 620px) {
-    //     grid-row: 2 / 4;
-    //     grid-column: 1 / 13;
-    // }
+    @media screen and (max-width: 768px) {
+        height: 50vh;
+        justify-content: center;
+    }
+
 }
 
 .select-number, .customise {
@@ -51,6 +52,12 @@
         width: 20px;
         height: 20px;
     }
+
+    @media screen and (max-width: 768px) {
+        position: static;
+        transform: none;
+        margin-top: 2rem;
+    }
 }
 
 //position generate teams button in control panel
@@ -58,4 +65,16 @@
     position: absolute;
     bottom: 1.5rem;
     left: calc(1.2rem + 1.5rem);
+
+    @media screen and (max-width: 768px) {
+        position: static;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form-generate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

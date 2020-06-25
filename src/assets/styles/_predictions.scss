@@ -18,6 +18,10 @@
             grid-column: 1 / 13;
         }
     }
+
+    @media screen and (max-width: 768px) {
+        padding: 0 2rem 7rem 2rem;
+    }
 }
 
 .predictions-text {

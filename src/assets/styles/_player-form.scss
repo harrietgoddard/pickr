@@ -11,10 +11,11 @@
     padding: 1.2rem;
     width: 100%;
 
-    @media screen and (max-width: 620px) {
+    @media screen and (max-width: 768px) {
         flex-direction: column;
         align-items: center;
     }
+
 }
 
 //position reset button in player form
@@ -23,7 +24,7 @@
     bottom: 1.5rem;
     right: calc(1.2rem + 1.5rem);
 
-    @media screen and (max-width: 620px) {
+    @media screen and (max-width: 768px) {
         position: static;
     }
 }
