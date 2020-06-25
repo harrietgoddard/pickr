@@ -64,7 +64,7 @@
     padding: 2rem;
 
     @media screen and (max-width: 1175px) {
-        padding: 5rem 3rem 2rem 3rem;
+        // padding: 5rem 3rem 2rem 3rem;
     }
 }
 
@@ -102,7 +102,11 @@
     @extend .center;
 
     @media screen and (max-width: 1175px) {
-        align-items: flex-end;
+        // align-items: flex-end;
+        // justify-content: flex-end;
+        // padding: 2rem;
+        // position: absolute;
+        // transform: translateY(-100%);
         justify-content: flex-end;
         padding: 2rem;
     }
@@ -112,4 +116,10 @@
 
 .home-container {
     @extend .vertical-align;
+}
+
+@media screen and (max-width: 1175px) {
+    .team-staging-area {
+        // position: relative;
+    }
 }

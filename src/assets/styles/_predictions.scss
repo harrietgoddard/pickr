@@ -27,6 +27,10 @@
     p:first-child {
         margin-bottom: 2rem;
     }
+
+    @media screen and (max-width: 1175px) {
+        margin-top: 2rem;
+    }
 }
 
 .reset-final {

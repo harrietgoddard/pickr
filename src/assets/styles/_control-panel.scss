@@ -9,18 +9,20 @@
     position: relative; //to position reset button inside player form
 
     @media screen and (max-width: 1175px) {
-        grid-row: 2 / 3;
-        grid-column: 3 / 11;
+        margin-bottom: var(--gutter);
+        height: 30vh;
+        // grid-row: 2 / 3;
+        // grid-column: 3 / 11;
 
-        @media screen and (max-width: 900px) {
-            grid-column: 1 / 13;
-        }
+        // @media screen and (max-width: 900px) {
+        //     grid-column: 1 / 13;
+        // }
     }
 
-    @media screen and (max-width: 620px) {
-        grid-row: 2 / 4;
-        grid-column: 1 / 13;
-    }
+    // @media screen and (max-width: 620px) {
+    //     grid-row: 2 / 4;
+    //     grid-column: 1 / 13;
+    // }
 }
 
 .select-number, .customise {

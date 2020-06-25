@@ -7,12 +7,13 @@
     justify-content: space-between;
 
     @media screen and (max-width: 1175px) {
-        grid-row: 1 / 2;
-        grid-column: 3 / 11;
+        margin-bottom: var(--gutter);
+        // grid-row: 1 / 2;
+        // grid-column: 3 / 11;
 
-        @media screen and (max-width: 900px) {
-            grid-column: 1 / 13;
-        }
+        // @media screen and (max-width: 900px) {
+        //     grid-column: 1 / 13;
+        // }
     }
 }
 
