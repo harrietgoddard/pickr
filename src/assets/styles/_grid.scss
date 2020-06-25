@@ -17,6 +17,10 @@
         // height: 250vh;
         height: auto;
         grid-template-rows: repeat(7, 1fr);
+
+        @media screen and (max-width: 620px) {
+            grid-template-rows: repeat(8, 1fr);
+        }
     }
 
 }

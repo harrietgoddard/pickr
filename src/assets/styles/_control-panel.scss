@@ -16,6 +16,11 @@
             grid-column: 1 / 13;
         }
     }
+
+    @media screen and (max-width: 620px) {
+        grid-row: 2 / 4;
+        grid-column: 1 / 13;
+    }
 }
 
 .select-number, .customise {
@@ -50,5 +55,5 @@
 .btn-generate {
     position: absolute;
     bottom: 1.5rem;
-    left: calc(1.2rem + 1.5rem); 
+    left: calc(1.2rem + 1.5rem);
 }
