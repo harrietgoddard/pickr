@@ -9,6 +9,11 @@
     @extend .vertical-align;
 }
 
+//to counter the default increase in text input width in firefox
+input[type=text] {
+    max-width: 220px;
+}
+
 //remove default firefox styling to improve contrast with background
 input[type=range] {
     -moz-appearance: none;

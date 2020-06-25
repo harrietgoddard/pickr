@@ -25,6 +25,10 @@
     @extend .vertical-align;
     justify-content: space-between;
 
+    @media screen and (max-width: 1175px) {
+        padding: 2rem 3rem;
+    }
+
     ul {
         width: 100%;
         max-height: 60%;
