@@ -63,8 +63,8 @@
     border: var(--border);
     padding: 2rem;
 
-    @media screen and (max-width: 1175px) {
-        // padding: 5rem 3rem 2rem 3rem;
+    @media screen and (max-width: 768px) {
+        padding: 1rem;
     }
 }
 

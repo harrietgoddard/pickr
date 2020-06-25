@@ -29,7 +29,7 @@
     @include mainText(1.3rem, 500, 0.3rem);
 
     @media screen and (max-width: 768px) {
-        @include mainText(1.1rem, 500, 0.1rem);
+        @include mainText(1rem, 500, 0.1rem);
     }
 }
 
