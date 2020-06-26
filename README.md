@@ -1,8 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Pickr
 
-## Available Scripts
+A React/Redux football team app that allows users to add players, generate and customise teams, and get predictions on the favourite team.
 
-In the project directory, you can run:
+See below for setup and other supporting documentation.
+
+![alt text](./img/pickr-sample.png)
 
 ### `npm start`
 
