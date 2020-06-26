@@ -1,70 +1,73 @@
-## Pickr
+# Pickr
 
-A React/Redux football team app that allows users to add players, generate and customise teams, and get predictions on the favourite team.
+A React/Redux football team picking app that allows users to add players, generate and customise teams, and get predictions on the favourite team.
 
 See below for setup and other supporting documentation.
 
 ![alt text](./img/pickr-sample.jpg)
 
-### `npm start`
+## Setup
 
-Runs the app in the development mode.<br />
+### Requirements
+
+Check you have npm installed by running `npm -v`.
+
+### Installation
+
+Clone git repository and run npm install in the project folder:
+
+`git clone git@github.com:harrietgoddard/pickr.git`
+
+`npm install`
+
+Once the packages have installed, run the app in development mode:
+
+`npm start`
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+The page will reload if you make edits.
 
-### `npm test`
+## App notes
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Summary of user experience
 
-### `npm run build`
+On initial page load, the user is presented with a form, in which they can specifiy the number of players per team (default five), and add players in turn. The user inputs a player name (required) and selects a player skill level between one and three (default two), before adding to the list of players displayed below. If the number of players per team is subsequently lowered, where necessary, the user will be prompted to delete players.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Once the required number of players have been added, the user can select whether teams should be balanced by skill level (default random) and click to generate teams. Once generated, the user can select team colours and choose the home team.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Once confirmed, the final teams are displayed along with the option to get predictions on the favourite team (based on skill level and the home advantage), and an option to reset the app.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Built in settings and adaptability
 
-### `npm run eject`
+A number of default/built in settings are included that can be changed by a developer to modify the app, and should facilitate any potential addition of functionality to allow the user to modify these settings themselves (eg. specify team names).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+All built in settings are set in the following file:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`src/data/settings.js`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Default settings:
+- default number of players: 5
+- minimum number of players: 2,
+- maximum number of players: 20,
+- home advantage: increase total skills value by 15%
+- team names: "Team 1" and "Team 2"
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Note that while the UI is designed with two teams in mind, the team allocation functions (in `src/data/teamPicker.js`) can be used for any number of teams (in case of adapting the app for league functionality for example).
 
-## Learn More
+### Basis of logic
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Random team allocation uses the Fisher-Yates shuffle algorithm to shuffle an array of players. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To balance teams by skill, the array of players is ordered by skill level, and each player in the array is allocated alternately to each team. Note that this can lead to Team 2 having an advantage in terms of total skill level.
 
-### Code Splitting
+To calculate the favourite team, each team's skill levels are totalled, and an uplift is subsequently applied to the home team. The team with the highest score is the favourite.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Other
 
-### Analyzing the Bundle Size
+Tests are included for the team allocation and predictions logic, in `src/data/reducer/teamPicker.test.js` and `src/data/reducer/predictor.test.js` respectively. To run tests, run the following commands:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+`npm test src/data/reducer/teamPicker.test.js`
+`npm test src/data/reducer/predictor.test.js`
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+The user experience is optimised in browsers that support css grid (display flex is included as fallback).
