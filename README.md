@@ -68,6 +68,7 @@ To calculate the favourite team, each team's skill levels are totalled, and an u
 Tests are included for the team allocation and predictions logic, in `src/data/reducer/teamPicker.test.js` and `src/data/reducer/predictor.test.js` respectively. To run tests, run the following commands:
 
 `npm test src/data/reducer/teamPicker.test.js`
+
 `npm test src/data/reducer/predictor.test.js`
 
 The user experience is optimised in browsers that support css grid (display flex is included as fallback).
