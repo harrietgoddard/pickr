@@ -12,7 +12,7 @@
 
     //place background image in header only on mobile
     @media screen and (max-width: 768px) {
-        background-image: url(../images/football-team.jpg);
+        background-image: url(../images/football-team-small.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-color: var(--teal);
