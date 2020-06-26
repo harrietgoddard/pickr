@@ -11,7 +11,8 @@ const FormField = ({
     disable,
     inputClass,
     containerClass,
-    handleChange, 
+    handleChange,
+    nameRef 
 }) => {
 
     return (
@@ -29,6 +30,7 @@ const FormField = ({
                 max={ max }
                 step={ step }
                 onChange={ handleChange }
+                ref={ nameRef }
                 required
                 disabled={ disable }
                 className={ inputClass }
