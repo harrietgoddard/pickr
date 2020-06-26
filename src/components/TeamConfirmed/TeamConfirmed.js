@@ -2,6 +2,7 @@ import React from 'react';
 import TeamList1 from '../TeamList/TeamList1';
 import TeamList2 from '../TeamList/TeamList2';
 import TeamKit from '../TeamKit';
+import { teamName } from '../../data/settings';
 
 const TeamConfirmed = ({ color1, color2, home }) => {
 
@@ -10,7 +11,7 @@ const TeamConfirmed = ({ color1, color2, home }) => {
             <div className="team-list-1-final">
                 <TeamList1 />
                 <TeamKit
-                name={ "Team 1" }
+                name={ teamName(1) }
                 color={ color1 }
                 home={ home === 1 }
                 />
@@ -18,7 +19,7 @@ const TeamConfirmed = ({ color1, color2, home }) => {
             <div className="team-list-2-final">
                 <TeamList2 />
                 <TeamKit
-                name={ "Team 2" }
+                name={ teamName(2) }
                 color={ color2 }
                 home={ home === 2 } 
                 />
