@@ -14,6 +14,7 @@ it('shuffles an arry', () => {
 
 });
 
+//tests orderBySkill
 it('orders by skill level', () => {
 
     let players = [
@@ -52,6 +53,7 @@ it('orders by skill level', () => {
 
 });
 
+//tests isDivisible
 it('checks an array can be divided into equal parts', () => {
 
     let resultPass = isDivisible([1, 2, 3, 4, 5, 6], 3);
@@ -64,6 +66,7 @@ it('checks an array can be divided into equal parts', () => {
 
 });
 
+//tests splitArrays
 it('split arrays according to index', () => {
 
     let result1 = splitArrays([1, 2, 3, 4, 5, 6], 3);

@@ -6,6 +6,7 @@ import {
 } from './predictor';
 import { homeAdvantage } from '../settings';
 
+//tests totalTeamSkills
 it('totals team skills', () => {
 
     let players = [
@@ -29,6 +30,7 @@ it('totals team skills', () => {
 
 });
 
+//tests addHomeAdvantage
 it('adds home advantage', () => {
 
     let result = addHomeAdvantage(16);
@@ -37,6 +39,7 @@ it('adds home advantage', () => {
 
 });
 
+//tests calculateScores
 it('calculates total scores', () => {
 
     let team1 = [
@@ -80,6 +83,7 @@ it('calculates total scores', () => {
 
 });
 
+//tests calculateFavourite
 it("calculates favourite team", () => {
 
     let scores1 = {
@@ -100,4 +104,4 @@ it("calculates favourite team", () => {
 
     expect(result2).toEqual(2);
 
-})
+});

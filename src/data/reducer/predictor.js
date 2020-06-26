@@ -1,12 +1,15 @@
 import { homeAdvantage } from '../settings';
 
+
 /*
 * takes a team (an array of player objects) and returns the total
-* skills value
+* skills value (number)
 */
 
 export const totalTeamSkills = team => {
+    
     return team.map(player => player.skill).reduce((total, skill) => total + skill);
+
 };
 
 
@@ -16,8 +19,11 @@ export const totalTeamSkills = team => {
 */
 
 export const addHomeAdvantage = totalSkills => {
-    let advantage = totalSkills * homeAdvantage; //update with variable
+
+    let advantage = totalSkills * homeAdvantage;
+
     return totalSkills + advantage; 
+
 };
 
 
@@ -39,11 +45,14 @@ export const calculateScores = (team1, team2, home) => {
     };
 };
 
+
 /*
 * takes a scores object (see above) and returns a number
 * representing the favourite team
 */
 
 export const calculateFavourite = scores => {
+
     return Math.max(scores.team1Total, scores.team2Total) === scores.team1Total ? 1 : 2;
+    
 };

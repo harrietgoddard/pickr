@@ -1,5 +1,5 @@
 /*
-* check whether enough players have been added given
+* check whether enough (or too many) players have been added given
 * the specified number of players per team
 */
 
