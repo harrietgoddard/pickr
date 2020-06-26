@@ -4,7 +4,7 @@ A React/Redux football team app that allows users to add players, generate and c
 
 See below for setup and other supporting documentation.
 
-![alt text](./img/pickr-sample.png)
+![alt text](./img/pickr-sample.jpg)
 
 ### `npm start`
 
