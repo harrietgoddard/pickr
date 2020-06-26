@@ -6,7 +6,8 @@
     padding: 1.5rem;
     @extend .vertical-align;
     justify-content: space-between;
-    position: relative; //to position reset button inside player form
+    //to position reset button inside player form
+    position: relative;
 
     @media screen and (max-width: 1175px) {
         margin-bottom: var(--gutter);

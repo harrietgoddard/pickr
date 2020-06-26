@@ -1,4 +1,6 @@
-//main typography mixin
+/*
+* main typography mixin
+*/
 
 @mixin mainText($fontSize, $fontWeight, $letterSpacing) {
     font-family: var(--fontMain);
@@ -8,7 +10,9 @@
     letter-spacing: $letterSpacing;
 }
 
-//titles
+/*
+* titles
+*/
 
 .title-main {
     @include mainText(5rem, 200, normal);
@@ -23,7 +27,9 @@
     @include mainText(1.7rem, 300, normal);
 }
 
-//main text
+/*
+* main text
+*/
 
 .text-large {
     @include mainText(1.3rem, 500, 0.3rem);
@@ -48,7 +54,9 @@
     @include mainText(0.8rem, 400, 0.3rem);
 }
 
-//card text
+/*
+* card text
+*/
 
 .text-card {
     @include mainText(1.3rem, 400, normal);

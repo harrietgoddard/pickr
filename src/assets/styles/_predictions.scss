@@ -6,7 +6,8 @@
     align-items: center;
     justify-content: space-between;
     padding-bottom: 5rem;
-    position: relative; //to allow reset button to be positioned in here
+    //to allow reset button to be positioned in here
+    position: relative;
 
     @media screen and (max-width: 1175px) {
         flex-direction: column;
@@ -31,6 +32,7 @@
     }
 }
 
+//position reset button in predictions container
 .reset-final {
     position: absolute;
     left: 50%;
