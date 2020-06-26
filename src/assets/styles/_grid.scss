@@ -1,15 +1,39 @@
 .container {
+    
+    //fallback layout if browser does not support grid
+    display: flex;
+    flex-direction: column;
+
+    padding: var(--gutter);
+
     background-image: url(../images/football-team.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--teal);
     background-blend-mode: multiply;
+}
 
-    height: 100vh;
-    padding: var(--gutter);
+//if grid is supported
+@supports (display: grid) {
+
+    .container {   
+        height: 100vh;
+        
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: var(--gutter);
     
-    display: grid;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: var(--gutter);
+        @media screen and (max-width: 1175px) {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            padding: var(--gutterWide);
+    
+            @media screen and (max-width: 768px) {
+                background-image: none;
+                padding: var(--gutter);
+            }
+        }
+    }
 }

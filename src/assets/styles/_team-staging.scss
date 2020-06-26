@@ -12,6 +12,10 @@
 
 .header-team-1, .header-team-2 {
     @extend .center;
+
+    @media screen and (max-width: 1175px) {
+        padding: 2rem;
+    }
 }
 
 //team cards
@@ -29,9 +33,13 @@
 .team-list-1, .team-list-2 {
     border: var(--border);
     padding: 2rem;
+
+    @media screen and (max-width: 768px) {
+        padding: 1rem;
+    }
 }
 
-//home/away buttons and text
+//'home/away' buttons and text
 
 .home-btn-container-1 {
     grid-row: 6 / 7;
@@ -45,6 +53,16 @@
 
 .home-btn-container-1, .home-btn-container-2 {
     @extend .center;
+
+    @media screen and (max-width: 1175px) {
+        justify-content: flex-end;
+        padding: 2rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+    }
+
 }
 
 .home-container {

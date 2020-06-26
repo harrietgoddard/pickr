@@ -4,7 +4,7 @@ import FormField from './FormField';
 const GenerateTeamsForm = ({ balanced, handleClick, handleToggle }) => {
 
     return (
-        <form>
+        <form className="form-generate">
             <FormField 
                 name={ "team-picker-type" }
                 label={ "Balance teams by skill?" }

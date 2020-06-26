@@ -8,3 +8,14 @@
 .form-field {
     @extend .vertical-align;
 }
+
+//to counter the default increase in text input width in firefox
+input[type=text] {
+    max-width: 220px;
+}
+
+//align firefox range input styling to default Chrome styling, to improve contrast with background
+input[type=range] {
+    -moz-appearance: none;
+    background-color: #0000FF;
+}

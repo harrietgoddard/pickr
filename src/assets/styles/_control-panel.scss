@@ -7,6 +7,17 @@
     @extend .vertical-align;
     justify-content: space-between;
     position: relative; //to position reset button inside player form
+
+    @media screen and (max-width: 1175px) {
+        margin-bottom: var(--gutter);
+        height: 30vh;
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 50vh;
+        justify-content: center;
+    }
+
 }
 
 .select-number, .customise {
@@ -22,7 +33,7 @@
     }
 }
 
-//balance teams by skill and delete players pop ups
+//'balance teams by skill' and 'delete players' pop ups
 .control-message {
     //position message centrally in control panel 
     position: absolute;
@@ -35,11 +46,29 @@
         width: 20px;
         height: 20px;
     }
+
+    @media screen and (max-width: 768px) {
+        position: static;
+        transform: none;
+        margin-top: 2rem;
+    }
 }
 
 //position generate teams button in control panel
 .btn-generate {
     position: absolute;
     bottom: 1.5rem;
-    left: calc(1.2rem + 1.5rem); 
+    left: calc(1.2rem + 1.5rem);
+
+    @media screen and (max-width: 768px) {
+        position: static;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form-generate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

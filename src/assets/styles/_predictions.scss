@@ -7,6 +7,15 @@
     justify-content: space-between;
     padding-bottom: 5rem;
     position: relative; //to allow reset button to be positioned in here
+
+    @media screen and (max-width: 1175px) {
+        flex-direction: column;
+        padding: 0 5rem 7rem 5rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 0 2rem 7rem 2rem;
+    }
 }
 
 .predictions-text {
@@ -15,6 +24,10 @@
 
     p:first-child {
         margin-bottom: 2rem;
+    }
+
+    @media screen and (max-width: 1175px) {
+        margin-top: 2rem;
     }
 }
 

@@ -2,6 +2,10 @@
     border: var(--border);
     border-radius: 100%;
     padding: 0.8rem;
+
+    @media screen and (max-width: 1175px) {
+        margin-top: 2rem;
+    }
 }
 
 .icon {

@@ -7,16 +7,36 @@
     animation-iteration-count: infinite;
 }
 
+//to toggle 'customise teams' arrow direction between grid view (desktop) and column view (ipad/mobile) 
+
+.arrow-mobile {
+    display: none;
+    text-align: center;
+
+    @media screen and (max-width: 1175px) {
+        display: block;
+        margin-bottom: 2rem;
+    }
+}
+
+.arrow-desktop {
+    @media screen and (max-width: 1175px) {
+        display: none;
+    }
+}
+
 //arrow animations
 
 .bounce-down {
     animation-name: bounce-down;
     animation-timing-function: ease;
+    margin-bottom: 1rem;
 }
 
 .bounce-left {
     animation-name: bounce-left;
     animation-timing-function: ease;
+
 }
 
 .bounce-right {

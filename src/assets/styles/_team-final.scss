@@ -15,8 +15,21 @@
     @extend .vertical-align;
     justify-content: space-between;
 
+    @media screen and (max-width: 1175px) {
+        padding: 2rem 3rem;
+        margin-bottom: var(--gutter);
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 2rem 1rem;
+    }
+
     ul {
         width: 100%;
         max-height: 60%;
+
+        @media screen and (max-width: 1175px) {
+            max-height: 30vh;
+        }
     }
 }

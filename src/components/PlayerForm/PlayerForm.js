@@ -11,9 +11,12 @@ class PlayerForm extends Component {
             playerSkill: 2,
         };
 
+        this.nameInput = React.createRef();
+
         this.handleName = this.handleName.bind(this);
         this.handleSkill = this.handleSkill.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleFocus = this.handleFocus.bind(this);
     };
 
     handleName = e => {
@@ -36,7 +39,11 @@ class PlayerForm extends Component {
         this.setState({
             playerName: "",
             playerSkill: 2,
-        })
+        });
+    };
+
+    handleFocus() {
+        this.nameInput.focus();
     };
 
     render() {
@@ -58,6 +65,7 @@ class PlayerForm extends Component {
                         handleChange={ this.handleName }
                         inputClass={ "text-input"}
                         containerClass={ "form-field" }
+                        nameRef={ ref => { this.nameInput = ref; } }
                     />
                     <FormField
                         name={ "player-skill" }
@@ -74,6 +82,7 @@ class PlayerForm extends Component {
                 <button 
                     type="submit"
                     className="btn-medium btn-add"
+                    onClick={ this.handleFocus }
                 >Add player</button>
             </form>
         );

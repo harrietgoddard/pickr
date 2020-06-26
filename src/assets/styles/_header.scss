@@ -2,12 +2,25 @@
     grid-row: 1 / 3;
     grid-column: 4 / 10;
     border: var(--border);
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     @extend .vertical-align;
     justify-content: space-between;
+
+    @media screen and (max-width: 1175px) {
+        margin-bottom: var(--gutter);
+    }
+
+    //place background image in header only on mobile
+    @media screen and (max-width: 768px) {
+        background-image: url(../images/football-team.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: var(--teal);
+        background-blend-mode: multiply;
+    }
 }
 
-//to line up the small title and the large title
+//to visually align the small title and the large title
 .title-main-small {
     transform: translateX(3%);
 }
