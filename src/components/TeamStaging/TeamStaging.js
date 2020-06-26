@@ -19,12 +19,15 @@ const TeamStaging = ({ teamsGenerated }) => {
                 </header> 
 
                 <div className="team-list-1">
+
                     { !teamsGenerated ? null :
                         <>
                             <TeamList1 />
+
                             <ColorPicker1 />
                         </>
                     }
+
                 </div>
 
                 <div className="home-btn-container-1">
@@ -40,12 +43,15 @@ const TeamStaging = ({ teamsGenerated }) => {
                 </header>
 
                 <div className="team-list-2">
+
                 { !teamsGenerated ? null :
                         <>
                             <TeamList2 />
+
                             <ColorPicker2 />
                         </>
                     }
+
                 </div>
                 
                 <div className="home-btn-container-2">

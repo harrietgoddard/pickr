@@ -13,7 +13,7 @@ const Main = ({ teamsConfirmed }) => {
         <main>
 
             { !teamsConfirmed ?
-
+                //show this before teams are confirmed
                 <>
 
                     <ControlPanel 
@@ -26,16 +26,18 @@ const Main = ({ teamsConfirmed }) => {
                     <TeamStaging />
 
                 </> :
-            
+                //show this after teams have been confirmed
                 <>
                     <TeamConfirmed />
                     
                     <div className="predictions-container">
+
                         <Predictions homeAdvantage={ homeAdvantage }/>
                         
                         <div className="reset-final">
                             <ResetButton />
                         </div>
+                        
                     </div>
 
                 </>

@@ -13,10 +13,12 @@ const FormField = ({
 
     return (
         <div className="control-message">
+
             <label 
                 htmlFor={ name }
                 className="text-small"
             >{ label }</label>
+
             <input 
                 id={ name } 
                 name={ name }
@@ -29,6 +31,7 @@ const FormField = ({
                 onChange={ handleToggle }
                 required
             />
+            
         </div>
     );
 

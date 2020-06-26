@@ -4,11 +4,16 @@ const HomeButton = ({ homeOrAway, handleClick }) => {
 
     return (
         <div className="home-container">
+
             <p className="text-xsmall">Click to switch</p>
+
             <button 
             onClick={ handleClick }
-            className={homeOrAway ? "btn-large btn-active" : "btn-large"} 
-            >{ homeOrAway ? "Home" : "Away" }</button>
+            className={ homeOrAway ? "btn-large btn-active" : "btn-large" } 
+            >
+                { homeOrAway ? "Home" : "Away" }
+            </button>
+
         </div>
     );
 

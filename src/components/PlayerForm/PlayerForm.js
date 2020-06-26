@@ -6,11 +6,13 @@ class PlayerForm extends Component {
     constructor(props) {
         super(props);
 
+        //keep track of inputs in local state
         this.state = {
             playerName: "",
-            playerSkill: 2,
+            playerSkill: 2, //default skill rating
         };
 
+        //create ref to refocus name input on click of 'add player' button
         this.nameInput = React.createRef();
 
         this.handleName = this.handleName.bind(this);
@@ -31,6 +33,7 @@ class PlayerForm extends Component {
         });
     };
 
+    //pass data up on submit of form and reset local state to initial
     handleSubmit = (e) => {
         e.preventDefault();
         
@@ -42,6 +45,7 @@ class PlayerForm extends Component {
         });
     };
 
+    //for refocusing on name input on click of 'add player' button
     handleFocus() {
         this.nameInput.focus();
     };
@@ -50,13 +54,14 @@ class PlayerForm extends Component {
 
         const { playerName, playerSkill } = this.state;
 
-        return (
-            
+        return (           
             <form 
                 onSubmit={ this.handleSubmit }
                 className="form-container"
             >
+                
                 <div className="form-inputs">
+
                     <FormField
                         name={ "player-name" }
                         label={ "Enter player name" }
@@ -67,6 +72,7 @@ class PlayerForm extends Component {
                         containerClass={ "form-field" }
                         nameRef={ ref => { this.nameInput = ref; } }
                     />
+
                     <FormField
                         name={ "player-skill" }
                         label={ "Select skill level" }
@@ -78,14 +84,18 @@ class PlayerForm extends Component {
                         handleChange={ this.handleSkill }
                         containerClass={ "form-field" }
                     />
+
                 </div>
+
                 <button 
                     type="submit"
                     className="btn-medium btn-add"
                     onClick={ this.handleFocus }
                 >Add player</button>
+                
             </form>
         );
+
     };
 };
 
