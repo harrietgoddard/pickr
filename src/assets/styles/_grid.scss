@@ -11,6 +11,10 @@
     background-repeat: no-repeat;
     background-color: var(--teal);
     background-blend-mode: multiply;
+
+    @media screen and (max-width: 1175px) {
+        background-image: url(../images/football-team-med.jpg);
+    }
 }
 
 //if grid is supported

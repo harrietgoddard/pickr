@@ -23,14 +23,18 @@
 .select-number, .customise {
     display: flex;
     align-items: center;
+}
+
+.select-number {
 
     p {
         margin-right: 0.8rem;
     }
-
+    
     button:last-child {
         margin-left: 0.5rem;
     }
+    
 }
 
 //'balance teams by skill' and 'delete players' pop ups
@@ -70,5 +74,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .customise {
+        justify-content: center;
     }
 }
