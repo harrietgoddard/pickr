@@ -10,7 +10,6 @@ const initial = {
     teamsGenerated: false,
     teamsConfirmed: false,
 
-
     players: [],
     playersTeam1: [],
     playersTeam2: [],

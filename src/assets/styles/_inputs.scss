@@ -9,7 +9,7 @@
     @extend .vertical-align;
 }
 
-//to counter the default increase in text input width in firefox
+//to counter the larger default text input width in firefox
 input[type=text] {
     max-width: 220px;
 }

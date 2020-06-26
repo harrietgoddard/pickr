@@ -30,6 +30,7 @@
     box-sizing: border-box;
 }
 
+//to allow layout of children elements to be independent of parents
 main, section {
     display: contents;
 }

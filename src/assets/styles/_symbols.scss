@@ -7,7 +7,7 @@
     animation-iteration-count: infinite;
 }
 
-//to toggle 'customise teams' arrow direction between grid view (desktop) and column view (ipad/mobile) 
+//to toggle 'customise teams' arrow direction between grid view (desktop) and flex column view (ipad/mobile) 
 
 .arrow-mobile {
     display: none;
@@ -25,7 +25,7 @@
     }
 }
 
-//arrow animations
+//arrow animations and keyframes
 
 .bounce-down {
     animation-name: bounce-down;

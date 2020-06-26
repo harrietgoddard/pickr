@@ -17,10 +17,12 @@ const FormField = ({
 
     return (
         <div className={ containerClass }>
+
             <label 
             htmlFor={ name }
             className="text-small"
             >{ label }</label>
+
             <input 
                 id={ name } 
                 name={ name }
@@ -35,6 +37,7 @@ const FormField = ({
                 disabled={ disable }
                 className={ inputClass }
             />
+            
         </div>
     );
 
