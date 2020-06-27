@@ -29,7 +29,8 @@
         max-height: 60%;
 
         @media screen and (max-width: 1175px) {
-            max-height: 30vh;
+            //since viewport height is bad on mobile due to the URL bar
+            max-height: 230px;
         }
     }
 }

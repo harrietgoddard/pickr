@@ -15,7 +15,8 @@
     overflow-x: hidden;
 
     @media screen and (max-width: 1175px) {
-        max-height: 20vh;
+        //since viewport height is bad on mobile due to the URL bar
+        max-height: 200px;
     }
 }
 
