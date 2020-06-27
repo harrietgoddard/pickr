@@ -21,12 +21,14 @@ class PlayerForm extends Component {
         this.handleFocus = this.handleFocus.bind(this);
     };
 
+    //player name input
     handleName = e => {
         this.setState({
             playerName: e.currentTarget.value
         });
     };
 
+    //player skill input
     handleSkill = e => {
         this.setState({
             playerSkill: +e.currentTarget.value
