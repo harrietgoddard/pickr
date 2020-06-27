@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/pickr/static/css/main.3388e5f9.chunk.css",
+    "main.js": "/pickr/static/js/main.6cf744cc.chunk.js",
+    "main.js.map": "/pickr/static/js/main.6cf744cc.chunk.js.map",
+    "runtime-main.js": "/pickr/static/js/runtime-main.9fe45863.js",
+    "runtime-main.js.map": "/pickr/static/js/runtime-main.9fe45863.js.map",
+    "static/js/2.75028eb7.chunk.js": "/pickr/static/js/2.75028eb7.chunk.js",
+    "static/js/2.75028eb7.chunk.js.map": "/pickr/static/js/2.75028eb7.chunk.js.map",
+    "index.html": "/pickr/index.html",
+    "precache-manifest.f074e61d66d331be1be487ab01c5c449.js": "/pickr/precache-manifest.f074e61d66d331be1be487ab01c5c449.js",
+    "service-worker.js": "/pickr/service-worker.js",
+    "static/css/main.3388e5f9.chunk.css.map": "/pickr/static/css/main.3388e5f9.chunk.css.map",
+    "static/js/2.75028eb7.chunk.js.LICENSE.txt": "/pickr/static/js/2.75028eb7.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/pickr/static/media/football-team.7cfe0a73.jpg",
+    "static/media/tshirt.svg": "/pickr/static/media/tshirt.f2ddd09a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9fe45863.js",
+    "static/js/2.75028eb7.chunk.js",
+    "static/css/main.3388e5f9.chunk.css",
+    "static/js/main.6cf744cc.chunk.js"
+  ]
+}
