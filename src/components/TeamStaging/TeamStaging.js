@@ -20,6 +20,7 @@ const TeamStaging = ({ teamsGenerated }) => {
 
                 <div className="team-list-1">
 
+                    {/* show team list and color picker when teams have been generated */}
                     { !teamsGenerated ? null :
                         <>
                             <TeamList1 />
@@ -44,7 +45,8 @@ const TeamStaging = ({ teamsGenerated }) => {
 
                 <div className="team-list-2">
 
-                { !teamsGenerated ? null :
+                    {/* show team list and color picker when teams have been generated */}
+                    { !teamsGenerated ? null :
                         <>
                             <TeamList2 />
 
