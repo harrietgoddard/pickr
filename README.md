@@ -2,7 +2,9 @@
 
 A React/Redux football team picking app that allows users to add players, generate and customise teams, and get predictions on the favourite team.
 
-See below for setup and other supporting documentation.
+See below for setup and app notes.
+
+See also `supporting-comments.md` for commentary on key development decisions.
 
 ![alt text](./img/pickr-sample.jpg)
 
